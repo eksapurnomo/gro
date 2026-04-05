@@ -87,19 +87,19 @@ export default function Header2() {
                   onClick={openContactModal}
                   role="button"
                 >
-                  <span>Request a demo</span>
+                  <span>Hubungi Kami</span>
                 </a>
               </div>
               <div className="d-none lg:d-block">
                 <Link className="text-none fw-medium" href={`/sign-in`}>
-                  <span>Log in</span>
+                
                 </Link>
               </div>
               <Link
                 className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex"
                 href={`/page-pricing`}
               >
-                Start free trial
+                Penawaran
               </Link>
               <LanguageSelect2 />
               <a

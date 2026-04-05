@@ -4,27 +4,27 @@ export const panelData = [
     lightIcon: "/assets/images/template/icon-diamond.svg",
     darkIcon: "/assets/images/template/icon-diamond-dark.svg",
     altText: "impact-icon",
-    title: "Make an impact",
+    title: "Integrity",
     description:
-      "We’re building something big. Something that has the power to change the trajectory of any sized business for the better.",
+      "Kami senantiasa menerapkan standar etika dan moral tertinggi dengn selalu mengedepankan asas kejujuran dan keadilan dalam setiap kegiatan.",
   },
   {
     id: 2,
     lightIcon: "/assets/images/template/icon-trophy.svg",
     darkIcon: "/assets/images/template/icon-trophy-dark.svg",
     altText: "crown-icon",
-    title: "Learn",
+    title: "Execution",
     description:
-      "Teams are masters of their craft though we’re all experts in our respective fields, we always make time to expand our minds.",
+      "Kami berkomitmen untuk melaksanakan strategi perusahaan, menerjemahkan dan mewujudkan strategi perusahaan menjad tindakan yang nyata, sampai mendapatkan hasil yang berpengaruh langsung pada bisnis kita",
   },
   {
     id: 3,
     lightIcon: "/assets/images/template/icon-crown.svg",
     darkIcon: "/assets/images/template/icon-crown-dark.svg",
     altText: "empathy-icon",
-    title: "Empathy",
+    title: "Innovation",
     description:
-      "We strive to be empathetic to every customer and colleague and by doing so we provide a better experience for all.",
+      "Kami senantiasa berupaya melahirkan ide-ide kreatif, gagasan, dan inovasi, untuk mengantisipasi kebutuhan pelanggan dan untuk mencapai tujuan dan kemampuan organisasi.",
   },
 ];
 
@@ -33,17 +33,17 @@ export const features = [
     id: 4,
     imgSrc: "/assets/images/template/feature-01.svg",
     imgAlt: "Share tools quickly and confidently in minutes",
-    title: "Share tools quickly and confidently in minutes",
+    title: "Pengalaman",
     description:
-      "This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables. You can also customize your own dynamic versions.",
+      "Meskipun baru berdiri ,kami memiliki tim dengan pengalaman luas di industri logistik.",
   },
   {
     id: 5,
     imgSrc: "/assets/images/template/feature-02.svg",
     imgAlt: "Connect every part of your entire business",
-    title: "Connect every part of your entire business",
+    title: "Wilayah Jangkauan",
     description:
-      "Keep data consistent, with native CRM integrations that streamline your entire Tool workflow.",
+      "Kami melayani pengiriman ke berbagai kota besar di Indonesia..",
     linkText: "See all integrations",
     linkHref: "#",
   },
@@ -51,9 +51,19 @@ export const features = [
     id: 6,
     imgSrc: "/assets/images/template/feature-03.svg",
     imgAlt: "Maintain compliance and control your apps",
-    title: "Maintain compliance and control your apps",
+    title: "Layanan Terpadu",
     description:
-      "Improve security and trust with built-in legally binding e-Signatures. Create pre-approved templates, content blocks and lock all legal information to prevent costly mistakes.",
+      "Solusi One-Stop Service yang memudahkan pengelolaan logistik Anda.",
+  },
+   {
+    id: 5,
+    imgSrc: "/assets/images/template/feature-08.svg",
+    imgAlt: "Connect every part of your entire business",
+    title: "Dukungan Pelanggan",
+    description:
+      "Tim kami siap membantu dan menjawab setiap pertanyaan Anda dengan cepat.",
+    linkText: "See all integrations",
+    linkHref: "#",
   },
 ];
 

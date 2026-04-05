@@ -43,15 +43,20 @@ export default function About() {
           >
             <div className="vstack items-center gap-4 mb-4 sm:mb-6 lg:mb-8 max-w-850px mx-auto text-center">
               <h1 className="h2 sm:h1 lg:display-6 xl:display-5 m-0">
-                About Lexend.
+                Tentang Perusahaan.
               </h1>
               <p className="fs-6 md:fs-5 text-dark dark:text-white text-opacity-70">
-                In 2014, Steven Smith have gotten so much of our time back that
-                we're now able to put towards things that are actually helping
-                our company as opposed to just throwing content out there. and
-                the idea of Lexend was born. Today, Lexend empowers teams to
-                easily communicate with customers through personalized documents
-                that can be created in minutes, build meaningful relationships.
+                PT Cahaya Nusantara Dunia secara resmi berdiri pada tahun 2023 sebagai bentuk
+respons terhadap peluang besar di dunia logistik yang terus berkembang di
+Indonesia. Kami adalah perusahaan yang bergerak di bidang jasa angkutan darat dan
+pengurusan transportasi. Dengan didukung oleh sumber daya manusia yang
+profesional, kami berkomitmen untuk memberikan pelayanan terbaik demi menjamin
+kepuasan klien kami.
+Komitmen kami mencakup penyelesaian setiap pekerjaan pengurusan transportasi
+yang dipercayakan oleh klien. Hal ini kami wujudkan melalui perencanaan,
+pelaksanaan, dan pengendalian dengan sistem manajemen yang efektif dan efisien.
+Kami juga memprioritaskan penerapan standar K3 (Keselamatan dan Kesehatan Kerja)
+serta menjaga lingkungan kerja yang aman dan nyaman.
               </p>
             </div>
             <div className="panel row child-cols-12 col-match g-1 sm:g-2">

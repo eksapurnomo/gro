@@ -4,35 +4,35 @@ export const panelsData = [
     lightImgSrc: "/assets/images/template/icon-diamond.svg",
     darkImgSrc: "/assets/images/template/icon-diamond-dark.svg",
     altText: "impact-icon",
-    title: "Make an impact",
+    title: "Integritas",
     description:
-      "We’re building something big. Something that has the power to change the trajectory of any sized business for the better.",
+      "Kami senantiasa menerapkan standar etika dan moral tertinggi dengn selalu mengedepankan asas kejujuran dan keadilan dalam setiap kegiatan.",
   },
   {
     id: 2,
     lightImgSrc: "/assets/images/template/icon-trophy.svg",
     darkImgSrc: "/assets/images/template/icon-trophy-dark.svg",
     altText: "crown-icon",
-    title: "Learn",
+    title: "Eksekusi",
     description:
-      "Lexend team are masters of their craft. Even though we’re all experts in our respective fields, we always make time to expand our minds.",
+      "Kami berkomitmen untuk melaksanakan strategi perusahaan, menerjemahkan dan mewujudkan strategi perusahaan menjad tindakan yang nyata, sampai mendapatkan hasil yang berpengaruh langsung pada bisnis kita.",
   },
   {
     id: 3,
     lightImgSrc: "/assets/images/template/icon-globe.svg",
     darkImgSrc: "/assets/images/template/icon-globe-dark.svg",
     altText: "fun-icon",
-    title: "Have fun",
+    title: "Inovasi",
     description:
-      "We work hard and play harder. We believe in the importance of celebrating wins big or small, for the business or individuals.",
+      "Kami senantiasa berupaya melahirkan ide-ide kreatif, gagasan, dan inovasi, untuk mengantisipasi kebutuhan pelanggan dan untuk mencapai tujuan dan kemampuan organisasi.",
   },
   {
     id: 4,
     lightImgSrc: "/assets/images/template/icon-crown.svg",
     darkImgSrc: "/assets/images/template/icon-crown-dark.svg",
     altText: "empathy-icon",
-    title: "Empathy",
+    title: "Komitmen",
     description:
-      "We strive to be empathetic to every customer and colleague and by doing so we can provide a better experience for all.",
+      "Kami senantiasa memberikan upaya terbaik yang ditunjukkan dalam sikap kerja untuk selalu melaksanakan apa saja yang telah menjadi kesepakatan.",
   },
 ];

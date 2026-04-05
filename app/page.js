@@ -1,14 +1,14 @@
-import Home1 from "./(homes)/home-1/page";
+import Home2 from "./(homes)/home-2/page";
 export const metadata = {
   title:
-    "Home 1 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "CND - PT.Cahaya Nusantara Dunia",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Layanan pengiriman via Container dan  Fullfilment Services.",
 };
-export default function HomePage1() {
+export default function HomePage2() {
   return (
     <>
-      <Home1 />
+      <Home2 />
     </>
   );
 }

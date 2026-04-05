@@ -1,8 +1,8 @@
 export const facts = [
   {
     id: 1,
-    year: 2014,
-    description: "Lexend founded",
+    year: 2023,
+    description: "CND Berdiri",
     animation:
       "onview: -100; textContent: 2014; round: 1; easing: linear; duration: 1200;",
   },
@@ -50,20 +50,20 @@ export const factItems = [
 
 export const panelsData = [
   {
-    value: 2014,
-    text: "Lexend founded.",
+    value: 2023,
+    text: "CND Berdiri.",
     animationData:
       "onview: -100; textContent: 2014; round: 1; easing: linear; duration: 1200;",
   },
   {
-    value: 50,
-    text: "Hardworking group.",
+    value: 500,
+    text: "Handling Project.",
     animationData:
       "onview: -100; textContent: [0, 50]; round: 1; easing: linear; duration: 1200;",
   },
   {
     value: 100,
-    text: "Document workflows.",
+    text: " Success Document.",
     animationData:
       "onview: -100; textContent: [0, 100]; round: 1; easing: linear; duration: 1200;",
     suffix: "k",
