@@ -8,7 +8,7 @@ const contacts = [
     name: "Januar Dwi Laksono",
     role: "Customer Service",
     phone: "6289602733848",
-    message: "Halo Kak Januar, saya ingin mengetahui lebih lanjut tentang layanan logistik GRO.",
+    message: "Halo Kak Januar, saya ingin mengetahui lebih lanjut tentang layanan logistik CND.",
     color: "#25D366",
   },
   {
@@ -16,12 +16,12 @@ const contacts = [
     name: "Sefti Prasetya",
     role: "Sales & Marketing",
     phone: "6282149307277",
-    message: "Halo Kak Sefti, saya ingin mengetahui lebih lanjut tentang layanan logistik GRO.",
+    message: "Halo Kak Sefti, saya ingin mengetahui lebih lanjut tentang layanan logistik CND.",
     color: "#25D366",
   },
   {
     id: 3,
-    name: "AI Assistant GRO",
+    name: "CND AI Agent",
     role: "Chatbot — Siap 24/7",
     phone: null, // Chatbase
     chatbaseId: "CRiTQKb9k7F8beMQDLWPB",
@@ -75,10 +75,7 @@ export default function WhatsAppButton() {
               <span style={{ fontSize: "18px" }}>🤖</span>
               <div>
                 <p style={{ color: "#fff", margin: 0, fontWeight: 600, fontSize: "13px" }}>
-                  AI Assistant GRO
-                </p>
-                <p style={{ color: "#94a3b8", margin: 0, fontSize: "11px" }}>
-                  Powered by Chatbase
+                  CND AI Agent
                 </p>
               </div>
             </div>
@@ -101,7 +98,7 @@ export default function WhatsAppButton() {
             src={`https://www.chatbase.co/chatbot-iframe/${contacts[2].chatbaseId}`}
             width="100%"
             style={{ height: "calc(100% - 50px)", border: "none", background: "#fff" }}
-            title="AI Assistant GRO"
+            title="CND AI Agent"
           />
         </div>
       )}

@@ -109,7 +109,7 @@ export default function Contact1() {
                       <div className="panel z-1">
                         <div className="vstack gap-3">
                           <p className="fs-5 xl:fs-4 fw-medium">
-                            "Layanan GRO membantu bisnis kami berkembang dengan
+                            "Layanan CND membantu bisnis kami berkembang dengan
                             solusi logistik yang cepat dan andal."
                           </p>
                           <div className="vstack gap-0">
