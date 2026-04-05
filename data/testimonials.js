@@ -1,92 +1,79 @@
 export const testimonials = [
   {
-    quote: `“Most of our time used to be taken up by administrative work whereas now we can focus on
-      building out programs to help our employees. 
-      Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Quas nisi consectetur adipisci eaque. Porro,
-      atque.”`,
-    name: "Mark Zellers",
-    position: "Director of Human Resources.",
+    quote: `"Sejak menggunakan layanan GRO, pengiriman logistik kami menjadi jauh lebih efisien. Tim mereka responsif dan selalu memastikan barang tiba tepat waktu."`,
+    name: "Budi Santoso",
+    position: "Direktur Operasional, PT Maju Bersama",
     imgSrc: "/assets/images/portrait/01.jpg",
   },
   {
-    quote: `“I can create a custom proposal with dynamic pricing
-      tables, and get approval from my boss all within 36
-      minutes and looks fantastic.
-      Dolor sit amet consectetur adipisicing elit. Quas
-      nisi consectetur adipisci eaque. Porro, atque.”`,
-    name: "André Garcia",
-    position: "Client Success Manager",
+    quote: `"CND Logisticmemberikan solusi one-stop service yang sangat memudahkan pengelolaan distribusi kami ke seluruh Indonesia. Sangat direkomendasikan!"`,
+    name: "Siti Rahayu",
+    position: "Manajer Supply Chain, CV Nusantara Jaya",
     imgSrc: "/assets/images/portrait/02.jpg",
   },
   {
-    quote: `“This powerful tool eliminates the need to leave
-      Salesforce to get things done, 
-      quas libero placeat voluptates sed sequi? Corporis,
-      earum vitae. 
-      Tempore pariatur dignissimos coming for great tool
-      of repellat quae a eaque culpa iusto fugit.”`,
-    name: "Matt Henderson",
-    position: "Director of Sales Operations",
+    quote: `"Tim CND Logistic memiliki pengalaman dan pengetahuan mendalam di industri logistik. Mereka memberikan solusi terbaik sesuai kebutuhan bisnis kami."`,
+    name: "Ahmad Fauzi",
+    position: "CEO, PT Karya Mandiri",
     imgSrc: "/assets/images/portrait/03.jpg",
   },
 ];
+
 export const slidesData = [
   {
     rating: 5,
     quote:
-      "We’re looking for people who share our vision! most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.",
-    name: "Mark Zellers",
-    title: "CEO, Co-Founder.",
+      "Layanan CND Logistic sangat membantu operasional bisnis kami. Pengiriman selalu tepat waktu dan tim mereka sangat profesional dalam menangani setiap kebutuhan logistik kami.",
+    name: "Budi Santoso",
+    title: "Direktur Operasional, PT Maju Bersama",
   },
   {
     rating: 5,
     quote:
-      "This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.",
-    name: "Natalia Larsson",
-    title: "Director of Sales",
+      "Dengan CND Logistic, kami berhasil memperluas jangkauan distribusi ke seluruh kota besar di Indonesia. Solusi mereka sangat terintegrasi dan mudah dikelola.",
+    name: "Siti Rahayu",
+    title: "Manajer Supply Chain, CV Nusantara Jaya",
   },
   {
     rating: 5,
     quote:
-      "We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers than comply with this regulation and as we look to create our website and this builder just outstanding!",
-    name: "Sarah Edrissi",
-    title: "Lead Marketing",
+      "Tim CND Logistic yang berpengalaman memberikan dukungan pelanggan yang luar biasa. Setiap pertanyaan selalu dijawab dengan cepat dan solusi yang tepat.",
+    name: "Ahmad Fauzi",
+    title: "CEO, PT Karya Mandiri",
   },
   {
     rating: 5,
     quote:
-      "We’re looking for people who share our vision! most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.",
-    name: "Anna Yon",
-    title: "Senior UI/UX Designer",
+      "Kami sangat puas dengan layanan CND Logistic. Transparansi harga dan kualitas layanan mereka jauh melampaui ekspektasi kami.",
+    name: "Dewi Kusuma",
+    title: "Procurement Manager, PT Sejahtera Abadi",
   },
-  // ...add more slide data as needed
 ];
 
 export const reviews = [
   {
-    name: "Mark Zellers",
-    position: "CEO, Co-Founder",
+    name: "Budi Santoso",
+    position: "Direktur Operasional, PT Maju Bersama",
     feedback:
-      "“We’re looking for people who share our vision! most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.”",
+      '"Layanan GRO sangat membantu operasional bisnis kami. Pengiriman selalu tepat waktu dan tim mereka sangat profesional."',
   },
   {
-    name: "Natalia Larsson",
-    position: "Director of Sales",
+    name: "Siti Rahayu",
+    position: "Manajer Supply Chain, CV Nusantara Jaya",
     feedback:
-      "“This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.”",
+      '"Dengan GRO, kami berhasil memperluas jangkauan distribusi ke seluruh kota besar di Indonesia. Solusi mereka sangat terintegrasi."',
   },
   {
-    name: "Sarah Edrissi",
-    position: "Lead Marketing",
+    name: "Ahmad Fauzi",
+    position: "CEO, PT Karya Mandiri",
     feedback:
-      "“We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers than comply with this regulation and as we look to create our website and this builder just outstanding!”",
+      '"Tim GRO yang berpengalaman memberikan dukungan pelanggan yang luar biasa. Setiap pertanyaan selalu dijawab dengan cepat."',
   },
   {
-    name: "Anna Yon",
-    position: "Senior UI/UX Designer",
+    name: "Dewi Kusuma",
+    position: "Procurement Manager, PT Sejahtera Abadi",
     feedback:
-      "“We’re looking for people who share our vision! most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.”",
+      '"Kami sangat puas dengan layanan GRO. Transparansi harga dan kualitas layanan mereka jauh melampaui ekspektasi kami."',
   },
 ];
 
@@ -94,66 +81,66 @@ export const testimonials2 = [
   {
     brandImg: "/assets/images/brands/brand-07.svg",
     testimonial:
-      "“We’re looking for people who share our vision! Most of our time used to be taken up by alternate administrative work whereas now we can focus on building out to help our employees.”",
+      '"Layanan GRO sangat membantu operasional bisnis kami. Pengiriman selalu tepat waktu dan tim mereka sangat profesional dalam menangani setiap kebutuhan logistik kami."',
     authorImg: "/assets/images/avatars/01.png",
-    authorName: "Mark Zellers",
-    authorRole: "CEO, Co-Founder",
+    authorName: "Budi Santoso",
+    authorRole: "Direktur Operasional, PT Maju Bersama",
   },
   {
     brandImg: "/assets/images/brands/brand-06.svg",
     testimonial:
-      "“This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.”",
+      '"Dengan GRO, kami berhasil memperluas jangkauan distribusi ke seluruh kota besar di Indonesia. Solusi mereka sangat terintegrasi dan mudah dikelola."',
     authorImg: "/assets/images/avatars/04.png",
-    authorName: "Natalia Larsson",
-    authorRole: "Director of Sales",
+    authorName: "Siti Rahayu",
+    authorRole: "Manajer Supply Chain, CV Nusantara Jaya",
   },
   {
     brandImg: "/assets/images/brands/brand-08.svg",
     testimonial:
-      "“We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers that comply with this regulation and as we look to create our website and this builder just outstanding!”",
+      '"Tim GRO yang berpengalaman memberikan dukungan pelanggan yang luar biasa. Setiap pertanyaan selalu dijawab dengan cepat dan solusi yang tepat."',
     authorImg: "/assets/images/avatars/03.png",
-    authorName: "Sarah Edrissi",
-    authorRole: "Lead Marketing",
+    authorName: "Ahmad Fauzi",
+    authorRole: "CEO, PT Karya Mandiri",
   },
   {
     brandImg: "/assets/images/brands/brand-01.svg",
     testimonial:
-      "“We’re looking for people who share our vision! Most of our time used to be taken up by alternate administrative work whereas now we can focus on building out to help our employees.”",
+      '"Kami sangat puas dengan layanan GRO. Transparansi harga dan kualitas layanan mereka jauh melampaui ekspektasi kami."',
     authorImg: "/assets/images/avatars/08.png",
-    authorName: "Anna Yon",
-    authorRole: "Senior UI/UX Designer",
+    authorName: "Dewi Kusuma",
+    authorRole: "Procurement Manager, PT Sejahtera Abadi",
   },
   {
     brandImg: "/assets/images/brands/brand-02.svg",
     testimonial:
-      "“We’re looking for people who share our vision! Most of our time used to be taken up by alternate administrative work whereas now we can focus on building out to help our employees.”",
+      '"Layanan GRO sangat membantu operasional bisnis kami. Pengiriman selalu tepat waktu dan tim mereka sangat profesional."',
     authorImg: "/assets/images/avatars/01.png",
-    authorName: "Mark Zellers",
-    authorRole: "CEO, Co-Founder",
+    authorName: "Budi Santoso",
+    authorRole: "Direktur Operasional, PT Maju Bersama",
   },
   {
     brandImg: "/assets/images/brands/brand-03.svg",
     testimonial:
-      "“This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.”",
+      '"Dengan GRO, kami berhasil memperluas jangkauan distribusi ke seluruh kota besar di Indonesia. Solusi mereka sangat terintegrasi."',
     authorImg: "/assets/images/avatars/04.png",
-    authorName: "Natalia Larsson",
-    authorRole: "Director of Sales",
+    authorName: "Siti Rahayu",
+    authorRole: "Manajer Supply Chain, CV Nusantara Jaya",
   },
   {
     brandImg: "/assets/images/brands/brand-04.svg",
     testimonial:
-      "“We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers that comply with this regulation and as we look to create our website and this builder just outstanding!”",
+      '"Tim GRO yang berpengalaman memberikan dukungan pelanggan yang luar biasa. Setiap pertanyaan selalu dijawab dengan cepat."',
     authorImg: "/assets/images/avatars/03.png",
-    authorName: "Sarah Edrissi",
-    authorRole: "Lead Marketing",
+    authorName: "Ahmad Fauzi",
+    authorRole: "CEO, PT Karya Mandiri",
   },
   {
     brandImg: "/assets/images/brands/brand-05.svg",
     testimonial:
-      "“We’re looking for people who share our vision! Most of our time used to be taken up by alternate administrative work whereas now we can focus on building out to help our employees.”",
+      '"Kami sangat puas dengan layanan GRO. Transparansi harga dan kualitas layanan mereka jauh melampaui ekspektasi kami."',
     authorImg: "/assets/images/avatars/08.png",
-    authorName: "Anna Yon",
-    authorRole: "Senior UI/UX Designer",
+    authorName: "Dewi Kusuma",
+    authorRole: "Procurement Manager, PT Sejahtera Abadi",
   },
 ];
 
@@ -161,71 +148,71 @@ export const testimonials3 = [
   {
     brandImgSrc: "/assets/images/brands/brand-07.svg",
     brandImgAlt: "Brand",
-    text: "“We’re looking for people who share our vision! most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.”",
+    text: '"Layanan GRO sangat membantu operasional bisnis kami. Pengiriman selalu tepat waktu dan tim mereka sangat profesional."',
     avatarImgSrc: "/assets/images/avatars/01.png",
-    avatarImgAlt: "Mark Zellers",
-    name: "Mark Zellers",
-    position: "CEO, Co-Founder.",
+    avatarImgAlt: "Budi Santoso",
+    name: "Budi Santoso",
+    position: "Direktur Operasional, PT Maju Bersama",
   },
   {
     brandImgSrc: "/assets/images/brands/brand-06.svg",
     brandImgAlt: "Brand",
-    text: "“This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.”",
+    text: '"Dengan GRO, kami berhasil memperluas jangkauan distribusi ke seluruh Indonesia. Solusi mereka sangat terintegrasi dan mudah dikelola."',
     avatarImgSrc: "/assets/images/avatars/04.png",
-    avatarImgAlt: "Natalia Larsson",
-    name: "Natalia Larsson",
-    position: "Director of Sales",
+    avatarImgAlt: "Siti Rahayu",
+    name: "Siti Rahayu",
+    position: "Manajer Supply Chain, CV Nusantara Jaya",
   },
   {
     brandImgSrc: "/assets/images/brands/brand-08.svg",
     brandImgAlt: "Brand",
-    text: "“We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers that comply with this regulation and as we look to create our website and this builder just outstanding!”",
+    text: '"Tim GRO yang berpengalaman memberikan dukungan pelanggan yang luar biasa. Setiap pertanyaan dijawab dengan cepat."',
     avatarImgSrc: "/assets/images/avatars/03.png",
-    avatarImgAlt: "Sarah Edrissi",
-    name: "Sarah Edrissi",
-    position: "Lead Marketing",
+    avatarImgAlt: "Ahmad Fauzi",
+    name: "Ahmad Fauzi",
+    position: "CEO, PT Karya Mandiri",
   },
 ];
 
 export const testimonials4 = [
   {
-    text: "We’re looking for people who share our vision! most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.",
-    name: "Mark Zellers",
+    text: "Layanan GRO sangat membantu operasional bisnis kami. Pengiriman selalu tepat waktu dan tim mereka sangat profesional.",
+    name: "Budi Santoso",
     imgSrc: "/assets/images/avatars/01.png",
   },
   {
-    text: "This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.",
-    name: "Natalia Larsson",
+    text: "Dengan GRO, kami berhasil memperluas jangkauan distribusi ke seluruh Indonesia. Solusi mereka sangat terintegrasi dan mudah dikelola.",
+    name: "Siti Rahayu",
     imgSrc: "/assets/images/avatars/04.png",
   },
   {
-    text: "We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers that comply with this regulation and as we look to create our website and this builder is just outstanding!",
-    name: "Sarah Edrissi",
+    text: "Tim GRO yang berpengalaman memberikan dukungan pelanggan yang luar biasa. Setiap pertanyaan dijawab dengan cepat.",
+    name: "Ahmad Fauzi",
     imgSrc: "/assets/images/avatars/03.png",
   },
   {
-    text: "We’re looking for people who share our vision! most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.",
-    name: "Anna Yon",
+    text: "Kami sangat puas dengan layanan GRO. Transparansi harga dan kualitas layanan mereka jauh melampaui ekspektasi kami.",
+    name: "Dewi Kusuma",
     imgSrc: "/assets/images/avatars/08.png",
   },
   {
-    text: "We’re looking for people who share our vision! most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.",
-    name: "Mark Zellers",
+    text: "Layanan GRO sangat membantu operasional bisnis kami. Pengiriman selalu tepat waktu dan tim mereka sangat profesional.",
+    name: "Budi Santoso",
     imgSrc: "/assets/images/avatars/01.png",
   },
   {
-    text: "This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.",
-    name: "Natalia Larsson",
+    text: "Dengan GRO, kami berhasil memperluas jangkauan distribusi ke seluruh Indonesia. Solusi mereka sangat terintegrasi.",
+    name: "Siti Rahayu",
     imgSrc: "/assets/images/avatars/04.png",
   },
   {
-    text: "We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers that comply with this regulation and as we look to create our website and this builder is just outstanding!",
-    name: "Sarah Edrissi",
+    text: "Tim GRO yang berpengalaman memberikan dukungan pelanggan yang luar biasa. Setiap pertanyaan dijawab dengan cepat.",
+    name: "Ahmad Fauzi",
     imgSrc: "/assets/images/avatars/03.png",
   },
   {
-    text: "We’re looking for people who share our vision! most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.",
-    name: "Anna Yon",
+    text: "Kami sangat puas dengan layanan GRO. Transparansi harga dan kualitas layanan mereka jauh melampaui ekspektasi kami.",
+    name: "Dewi Kusuma",
     imgSrc: "/assets/images/avatars/08.png",
   },
 ];
@@ -234,81 +221,81 @@ export const testimonialsData = [
   {
     id: 1,
     avatarSrc: "/assets/images/avatars/01.png",
-    name: "Mark Zellers",
-    role: "CEO, Co-Founder.",
+    name: "Budi Santoso",
+    role: "Direktur Operasional, PT Maju Bersama",
     quote:
-      "“We’re looking for people who share our vision! Most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.”",
+      '"Layanan GRO sangat membantu operasional bisnis kami. Pengiriman selalu tepat waktu dan tim mereka sangat profesional."',
   },
   {
     id: 2,
     avatarSrc: "/assets/images/avatars/04.png",
-    name: "Natalia Larsson",
-    role: "Director of Sales",
+    name: "Siti Rahayu",
+    role: "Manajer Supply Chain, CV Nusantara Jaya",
     quote:
-      "“This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.”",
+      '"Dengan GRO, kami berhasil memperluas jangkauan distribusi ke seluruh Indonesia. Solusi mereka sangat terintegrasi."',
   },
   {
     id: 3,
     avatarSrc: "/assets/images/avatars/03.png",
-    name: "Sarah Edrissi",
-    role: "Lead Marketing",
+    name: "Ahmad Fauzi",
+    role: "CEO, PT Karya Mandiri",
     quote:
-      "“We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers that comply with this regulation and as we look to create our website, this builder is just outstanding!”",
+      '"Tim GRO yang berpengalaman memberikan dukungan pelanggan yang luar biasa. Setiap pertanyaan dijawab dengan cepat."',
   },
   {
     id: 4,
     avatarSrc: "/assets/images/avatars/08.png",
-    name: "Anna Yon",
-    role: "Senior UI/UX Designer",
+    name: "Dewi Kusuma",
+    role: "Procurement Manager, PT Sejahtera Abadi",
     quote:
-      "“We’re looking for people who share our vision! Most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.”",
+      '"Kami sangat puas dengan layanan GRO. Transparansi harga dan kualitas layanan mereka jauh melampaui ekspektasi kami."',
   },
 ];
 
 export const testimonials5 = [
   {
-    text: "“We’re looking for people who share our vision! most of our time used to be taken up by most of alternate to help our employees.”",
-    name: "Mark Zellers",
+    text: '"Layanan GRO sangat membantu operasional kami. Pengiriman tepat waktu dan tim yang profesional."',
+    name: "Budi Santoso",
     imgSrc: "/assets/images/avatars/01.png",
   },
   {
-    text: "“This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.”",
-    name: "Jason Barella",
+    text: '"Dengan GRO, distribusi kami ke seluruh Indonesia menjadi lebih mudah dan terintegrasi."',
+    name: "Hendra Wijaya",
     imgSrc: "/assets/images/avatars/02.png",
   },
   {
-    text: "“Look for service suppliers that comply with this regulation, and as we look to create our website, this builder is just outstanding!”",
-    name: "Sarah Edrissi",
+    text: '"Dukungan pelanggan GRO sangat responsif. Setiap masalah selalu diselesaikan dengan cepat."',
+    name: "Ahmad Fauzi",
     imgSrc: "/assets/images/avatars/03.png",
   },
   {
-    text: "“We’re looking for people who share our vision! most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.”",
-    name: "Anna Yon",
+    text: '"Kami sangat puas dengan layanan GRO. Kualitas layanan mereka jauh melampaui ekspektasi kami."',
+    name: "Dewi Kusuma",
     imgSrc: "/assets/images/avatars/08.png",
   },
   {
-    text: "“We’re looking for people who share our vision! most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.”",
-    name: "Jaden Karl",
+    text: '"GRO memberikan solusi logistik terpadu yang sangat membantu pertumbuhan bisnis kami."',
+    name: "Rizky Pratama",
     imgSrc: "/assets/images/avatars/05.png",
   },
   {
-    text: "“This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.”",
-    name: "Ederson Hani",
+    text: '"Transparansi harga dan kecepatan layanan GRO membuat kami percaya untuk jangka panjang."',
+    name: "Eko Prasetyo",
     imgSrc: "/assets/images/avatars/06.png",
   },
   {
-    text: "“We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers that comply with this regulation and as we look to create our website and this builder is just outstanding!”",
-    name: "Matt Peterson",
+    text: '"Tim GRO benar-benar memahami kebutuhan logistik kami dan selalu memberikan solusi terbaik."',
+    name: "Indra Gunawan",
     imgSrc: "/assets/images/avatars/07.png",
   },
   {
-    text: "“We’re looking for people who share our vision! Most of our time used to be taken up by most of the alternate administrative work whereas now we can focus on building out to help our employees.”",
-    name: "Natalia Cherry",
+    text: '"Kami merekomendasikan GRO kepada semua pelaku bisnis yang membutuhkan mitra logistik andal."',
+    name: "Ratna Sari",
     imgSrc: "/assets/images/avatars/10.png",
   },
   {
-    text: "“This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.”",
-    name: "Muhammed Khan",
+    text: '"GRO telah menjadi backbone distribusi kami. Tidak ada yang perlu dikhawatirkan soal pengiriman."',
+    name: "Yoga Firmansyah",
     imgSrc: "/assets/images/avatars/11.png",
   },
 ];

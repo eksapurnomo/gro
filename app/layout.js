@@ -19,6 +19,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import ContactModal from "@/components/modals/ContactModal";
 import NewsletterModal from "@/components/modals/NewsletterModal";
 import SearchModal from "@/components/modals/SearchModal";
+import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -115,6 +116,7 @@ export default function RootLayout({ children }) {
           <SearchModal />
           <Cart />
           <BacktoTop />
+          <WhatsAppButton />
         </Context>
       </body>
     </html>
