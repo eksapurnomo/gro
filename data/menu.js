@@ -111,3 +111,7 @@ export const featurePageLinks = [
     viewAllText: "Lihat semua layanan",
   },
 ];
+
+// Fallback untuk bypass error Next.js static build dari template lama
+export const sections4 = [];
+export const features = [];
