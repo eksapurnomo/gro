@@ -175,7 +175,7 @@ export default function Nav() {
       </li>
 
       <li>
-        <Link href="/blog">Bermitra</Link>
+        <Link href="/bermitra">Bermitra</Link>
       </li>
       <li>
         <Link href="/page-about">Kegiatan</Link>

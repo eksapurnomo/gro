@@ -1,28 +1,24 @@
 import Header2 from "@/components/headers/Header2";
-
 import Footer2 from "@/components/footers/Footer2";
-
-import Faq from "@/components/homes/home-2/Faq";
-import Testimonials from "@/components/homes/home-3/Testimonials";
+import QuoteForm from "@/components/innerpages/QuoteForm";
 import Brands from "@/components/common/Brands2";
-import Cta from "@/components/innerpages/features/Cta";
-import Pricing from "@/components/innerpages/Pricing";
+
 export const metadata = {
-  title:
-    "Pricing || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Minta Penawaran (Quote) — CND Logistic | PT Cahaya Nusantara Dunia",
+  description: "Request penawaran biaya logistik, pengiriman barang laut, udara, darat khusus untuk klien CND Logistics.",
 };
+
 export default function PricingPage() {
   return (
     <>
       <div className="page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md bp-lg bp-xl bp-xxl dom-ready">
         <Header2 />
+        
         <div id="wrapper" className="wrap">
-          <Pricing />
-          {/* <div className="pt-6 xl:pt-9"></div> */}
-          <Faq />
-          <Testimonials />
+          <div className="pt-8"></div>
+          
+          <QuoteForm />
+          
           <div
             id="clients_brands"
             className="clients-brands section panel overflow-hidden"
@@ -32,7 +28,7 @@ export default function PricingPage() {
                 className="h6 sm:h5 text-center mb-4 sm:mb-6 xl:mb-8"
                 data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 200;"
               >
-                Trusted by well-known brands.
+                Dipercaya oleh perusahaan besar sebagai mitra rantai pasok:
               </h5>
               <div
                 className="block-panel panel"
@@ -44,7 +40,7 @@ export default function PricingPage() {
               </div>
             </div>
           </div>
-          <Cta />
+          
         </div>
         <Footer2 />
       </div>
