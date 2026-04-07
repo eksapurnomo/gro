@@ -24,7 +24,7 @@ export const menuItems = [
       { href: "/layanan/proyek", label: "Proyek" },
     ],
   },
-  { id: 4, href: "/blog", label: "Bermitra" },
+  { id: 4, href: "/bermitra", label: "Bermitra" },
   { id: 5, href: "/page-about", label: "Kegiatan" },
   { id: 6, href: "/page-contact", label: "Kontak" },
 ];

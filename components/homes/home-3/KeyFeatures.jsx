@@ -10,7 +10,14 @@ const airFreightFeatures = [
   { icon: "unicon-shield-check", title: "Asuransi Kargo", description: "Proteksi asuransi komprehensif untuk ketenangan pikiran selama proses pengiriman." },
 ];
 
-export default function KeyFeatures() {
+export default function KeyFeatures({ data }) {
+  const d = data || {
+    title: (
+       <>Keunggulan Layanan Pengiriman Udara <span className="text-primary"> CND.</span></>
+    ),
+    features: airFreightFeatures
+  };
+
   return (
     <div
       id="key_features"
@@ -24,15 +31,14 @@ export default function KeyFeatures() {
                 className="title h3 lg:h2 xl:h1 m-0 text-center max-w-550px mx-auto"
                 data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 250;"
               >
-                Keunggulan Layanan Pengiriman Udara
-                <span className="text-primary"> CND.</span>
+                {d.title}
               </h2>
               <div className="panel">
                 <div
                   className="row child-cols-12 sm:child-cols-6 lg:child-cols-4 col-match g-3"
                   data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
                 >
-                  {airFreightFeatures.map((feature, index) => (
+                  {d.features.map((feature, index) => (
                     <div key={index}>
                       <div className="feature-item panel p-4 border rounded-2 hover:bg-white dark:hover:bg-secondary dark:text-white dark:hover:text-gray-900 hover:scale-105 duration-150 transition-all">
                         <div className="vstack panel min-h-250px">

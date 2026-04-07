@@ -40,8 +40,11 @@ const swiperOptions2 = {
   modules: [Thumbs, Autoplay, Pagination],
   loopedslides: 4,
 };
-export default function Testimonials() {
+export default function Testimonials({ data }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const title = data?.title || "Apa Kata Klien Kami:";
+  const testimonials = data?.testimonials || logisticsTestimonials;
+
   return (
     <div
       id="clients_feedback"
@@ -54,7 +57,7 @@ export default function Testimonials() {
             data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
           >
             <h2 className="h4 sm:h3 lg:h2 m-0 text-center">
-              Apa Kata Klien Kami:
+              {title}
             </h2>
             <div className="panel p-3 lg:p-6 bg-secondary dark:bg-gray-800 rounded-3 mt-4 sm:mt-6">
               <div className="row child-cols-12 sm:child-cols-6 col-match g-3 lg:g-8">
@@ -66,7 +69,7 @@ export default function Testimonials() {
                       {...swiperThumbOptions}
                       className="swiper connect-image"
                     >
-                      {logisticsTestimonials.map((elm, i) => (
+                      {testimonials.map((elm, i) => (
                         <SwiperSlide key={i} className="swiper-slide">
                           <figure className="featured-image m-0 rounded ratio ratio-3x4 uc-transition-toggle overflow-hidden border">
                             <Image
@@ -94,7 +97,7 @@ export default function Testimonials() {
                       }}
                       className="swiper h-100 swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden"
                     >
-                      {logisticsTestimonials.map((testimonial, index) => (
+                      {testimonials.map((testimonial, index) => (
                         <SwiperSlide
                           className="swiper-slide h-100 pb-6"
                           key={index}

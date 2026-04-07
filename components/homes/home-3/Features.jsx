@@ -43,14 +43,16 @@ const logisticsFeatures = [
   },
 ];
 
-export default function Features() {
+export default function Features({ data }) {
+  const features = data?.features || logisticsFeatures;
+
   return (
     <div id="main_features" className="main-features section panel">
       <div className="section-outer panel py-6 xl:py-9">
         <div className="container sm:max-w-md lg:max-w-lg xl:max-w-xl">
           <div className="section-inner panel">
             <div className="panel vstack gap-4 sm:gap-6 lg:gap-8">
-              {logisticsFeatures.map((feature, i) => (
+              {features.map((feature, i) => (
                 <React.Fragment key={i}>
                   <div
                     className="feature-item panel"
@@ -120,7 +122,7 @@ export default function Features() {
                       </div>
                     </div>
                   </div>
-                  {i !== logisticsFeatures.length - 1 && (
+                  {i !== features.length - 1 && (
                     <hr
                       className="border-gray-100 dark:border-opacity-15 m-0 opacity-100"
                       data-anime="onview: -200; width: [0, '100%']; easing: easeInOutExpo; duration: 750; delay: 100;"
