@@ -115,3 +115,7 @@ export const featurePageLinks = [
 // Fallback untuk bypass error Next.js static build dari template lama
 export const sections4 = [];
 export const features = [];
+export const sections = [];
+export const sections2 = [];
+export const sections3 = [];
+export const categories = [];
