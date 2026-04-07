@@ -17,31 +17,35 @@ export default function Solutions() {
               data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
               <span className="fs-7 fw-medium py-narrow px-2 bg-dark text-white dark:bg-primary dark:text-dark rounded-pill">
-                Solutions
+                Kemampuan Spesifik
               </span>
               <h2 className="h3 lg:h1 m-0">
                 <span className="text-tertiary dark:text-primary">
-                  End-to-End
+                  Manajemen Kapasitas Besar
                 </span>{" "}
-                seamless data management solutions
+                Skala Nasional maupun Internasional
               </h2>
               <p className="fs-6 xl:fs-5 xl:px-8">
-                Offers a unified platform that fosters innovation while
-                providing end-to-end data management.
+                Pengalaman kami mencakup koordinasi dari multi-infrastruktur dan rekayasa jalur khusus.
               </p>
             </div>
             <div
               className="features-items row child-cols-12 sm:child-cols-6 g-2 col-match"
               data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 400});"
             >
-              {features11.map((feature, index) => (
-                <div key={index} className={feature.order}>
+              {[
+                { title: "Sewa Kapal & Tongkang", description: "Vessel Chartering khusus untuk kebutuhan bongkar muat dan operasional lepas pantai.", src: "/assets/images/template/icon-settings.svg" },
+                { title: "Riset Pemilihan Rute", description: "Route surveys and studies untuk memastikan beban dapat lewat di jalan raya atau tol.", src: "/assets/images/template/icon-magnifier.svg" },
+                { title: "Izin & Kepabeanan", description: "Penyelesaian dokumentasi dan birokrasi perizinan untuk pergerakan aset berlebih.", src: "/assets/images/template/icon-chart.svg" },
+                { title: "Pengawasan Penuh", description: "Monitoring terpusat selama operasional site pengantaran proyek Anda.", src: "/assets/images/template/icon-globe.svg" },
+              ].map((feature, index) => (
+                <div key={index} className="">
                   <div className="features-item hstack items-start gap-2 lg:gap-4 p-2 lg:p-4 py-4 lg:py-6 bg-secondary dark:bg-tertiary-800 dark:bg-gradient-45 from-tertiary to-transparent border border-dark dark:border-white dark:border-opacity-15 rounded-1-5">
                     <div className="icon-box cstack rounded w-1/3">
                       <Image
                         className="min-w-40px max-w-40px text-tertiary dark:text-primary"
-                        alt={feature.alt}
-                        src={feature.src}
+                        alt={feature.title}
+                        src="/assets/images/apps/drive.svg" // fallback icon due to missing asset
                         width={24}
                         height={24}
                         data-uc-svg=""
@@ -58,12 +62,12 @@ export default function Solutions() {
               ))}
             </div>
             <Link
-              href={`/page-features`}
+              href={`/page-contact`}
               className="btn btn-md btn-outline-tertiary dark:text-primary border border-dark dark:border-white dark:border-opacity-15 px-3 mx-auto rounded-pill"
               data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 500;"
             >
               <span>
-                <i className="icon-1 fw-bold unicon-add" /> View all solutions
+                <i className="icon-1 fw-bold unicon-whatsapp" /> Ajukan Penawaran Proyek
               </span>
             </Link>
           </div>

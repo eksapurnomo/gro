@@ -159,32 +159,32 @@ export default function Hero() {
               className="vstack items-center gap-2 lg:gap-4 mt-2 sm:mt-4 lg:mt-0 mb-6 lg:mb-8 max-w-750px mx-auto text-center"
               data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
             >
-              <h1 className="h3 sm:h2 lg:h1 m-0">
-                Solusi Pengiriman Udara yang <br className="d-none lg:d-block" />
-                Terukur, Transparan, dan Andal
+              <h1 className="h2 sm:h1 lg:display-6 xl:display-4 m-0">
+                Streamlines all your <br className="d-none lg:d-block" />
+                project workflows
               </h1>
               <p className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">
-                Layanan pengiriman barang melalui udara kami dirancang untuk menjawab 
+                Drag-and-drop editing helps you build them fast,
                 <br className="d-none sm:d-block" />
-                kebutuhan pengiriman yang menuntut kecepatan dan ketepatan waktu.
+                with your choice of 750+ ready-to-use, free templates.
               </p>
               <div className="vstack sm:hstack justify-center gap-1 lg:gap-2 mt-1 sm:mt-2 flex-sm-column fdr">
                 <Link
-                  href={`/page-contact`}
+                  href={`/page-pricing`}
                   className="btn btn-md lg:btn-lg btn-primary text-white"
                 >
-                  Konsultasi Sekarang
+                  Start free 14-day trial
                 </Link>
-                <Link
-                  href="https://wa.me/6289602733848"
+                <a
+                  onClick={openContactModal}
                   className="btn btn-md lg:btn-lg dark:text-white border-gray-900 dark:border-white border-opacity-20 hover:border-opacity-40"
-                  target="_blank"
+                  data-uc-toggle=""
                 >
-                  Hubungi Agen CND
-                </Link>
+                  Request a demo
+                </a>
               </div>
               <p className="text-dark dark:text-white text-opacity-70 sm:mt-1 lg:mt-0">
-                Berpengalaman melayani berbagai industri.
+                No credit card required.
               </p>
             </div>
             <div

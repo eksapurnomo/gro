@@ -2,7 +2,32 @@ import React from "react";
 import Image from "next/image";
 import Accordion2 from "@/components/common/Accordion2";
 
-export default function Howworks() {
+export default function Howworks({ data }) {
+  const customData = data || {
+    image1: "/assets/images/template/feature-image-03.jpg",
+    image2: "/assets/images/template/feature-image-01.jpg",
+    block1: {
+      title: "Manajemen Proyek & Pemantauan Kargo",
+      description: "Tim operasional kami memastikan armada pengiriman Anda terjadwal dengan rapi, mulai dari lokasi asal hingga pelabuhan bongkar muat."
+    },
+    block2: {
+      title: "Manajemen Konsolidasi Barang Terpadu",
+      description: "Melayani Full Container Load (FCL) untuk kapasitas penuh dan Less Container Load (LCL) untuk konsolidasi barang yang lebih efisien dari segi harga.",
+      features: [
+        {
+          icon: "/assets/images/common/icons/database.svg",
+          title: "Dokumen Ekspor-Impor",
+          desc: "Penyelesaian izin bea cukai dan dokumen terkait."
+        },
+        {
+          icon: "/assets/images/common/icons/line-chart.svg",
+          title: "Lacak Kontainer",
+          desc: "Visibilitas penuh untuk mengetahui posisi kargo Anda di seluruh pelabuhan."
+        }
+      ]
+    }
+  };
+
   return (
     <div
       id="how_it_works"
@@ -20,7 +45,7 @@ export default function Howworks() {
                         <Image
                           className="media-cover image"
                           alt="image title"
-                          src="/assets/images/template/feature-image-03.jpg"
+                          src={customData.image1}
                           width="1200"
                           height="1200"
                         />
@@ -32,12 +57,10 @@ export default function Howworks() {
                         data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                       >
                         <h3 className="h3 lg:h2 m-0">
-                          End-to-End Data Shared Management
+                          {customData.block1.title}
                         </h3>
                         <p className="fs-6 lg:fs-5">
-                          Whether you have a team of 2 or 200, our shared team
-                          inboxes keep everyone on the same page and in the
-                          loop.
+                          {customData.block1.description}
                         </p>
                         <div className="panel w-100 mt-2 lg:mt-4">
                           <ul
@@ -64,7 +87,7 @@ export default function Howworks() {
                         <Image
                           className="media-cover image"
                           alt="image title"
-                          src="/assets/images/template/feature-image-01.jpg"
+                          src={customData.image2}
                           width="1200"
                           height="1200"
                         />
@@ -79,62 +102,37 @@ export default function Howworks() {
                         data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                       >
                         <h3 className="h3 lg:h2 m-0">
-                          Unlock your Productivity Potential Now or Never
+                          {customData.block2.title}
                         </h3>
                         <p className="fs-6 lg:fs-5">
-                          Unlock your productivity potential with our intuitive
-                          and powerful to-do app. Manage tasks, set priorities,
-                          collaborate with your team, and track progress
-                          effortlessly.
+                          {customData.block2.description}
                         </p>
                         <div className="panel mt-2 lg:mt-4">
                           <div className="row child-cols-12 lg:child-cols-6 g-4">
-                            <div>
-                              <div className="panel vstack items-start gap-2">
-                                <div className="cstack min-w-48px min-h-48px bg-primary rounded-circle">
-                                  <Image
-                                    className="icon icon-1 text-white image-filter-white"
-                                    alt="feature-icon"
-                                    data-uc-svg=""
-                                    src="/assets/images/common/icons/database.svg"
-                                    width="24"
-                                    height="24"
-                                  />
-                                </div>
-                                <div className="vstack gap-1 lg:gap-2">
-                                  <h5 className="h5 lg:h4 m-0">
-                                    Use Data &amp; AI responsibly
-                                  </h5>
-                                  <p className="fs-6">
-                                    Offers a unified platform that fosters
-                                    innovation.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            <div>
-                              <div className="panel vstack items-start gap-2">
-                                <div className="cstack min-w-48px min-h-48px bg-primary rounded-circle">
-                                  <Image
-                                    className="icon icon-1 text-white image-filter-white"
-                                    alt="feature-icon"
-                                    data-uc-svg=""
-                                    src="/assets/images/common/icons/line-chart.svg"
-                                    width="24"
-                                    height="24"
-                                  />
-                                </div>
-                                <div className="vstack gap-1 lg:gap-2">
-                                  <h5 className="h5 lg:h4 m-0">
-                                    Track progress effortlessly
-                                  </h5>
-                                  <p className="fs-6">
-                                    Providing end-to-end data management today’s
-                                    challenges.
-                                  </p>
+                            {customData.block2.features.map((feature, i) => (
+                              <div key={i}>
+                                <div className="panel vstack items-start gap-2">
+                                  <div className="cstack min-w-48px min-h-48px bg-primary rounded-circle">
+                                    <Image
+                                      className="icon icon-1 text-white image-filter-white"
+                                      alt="feature-icon"
+                                      data-uc-svg=""
+                                      src={feature.icon}
+                                      width="24"
+                                      height="24"
+                                    />
+                                  </div>
+                                  <div className="vstack gap-1 lg:gap-2">
+                                    <h5 className="h5 lg:h4 m-0">
+                                      {feature.title}
+                                    </h5>
+                                    <p className="fs-6">
+                                      {feature.desc}
+                                    </p>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
+                            ))}
                           </div>
                         </div>
                       </div>

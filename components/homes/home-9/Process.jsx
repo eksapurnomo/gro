@@ -12,14 +12,19 @@ export default function Process() {
               className="row child-cols-6 lg:child-cols g-2 col-match"
               data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
             >
-              {cards.map((card, index) => (
+              {[
+                { title: "Inspeksi & Survei Jalur", src: "/assets/images/template/icon-magnifier.svg", alt: "Survei" },
+                { title: "Strategi Solusi Spesifik", src: "/assets/images/template/icon-settings.svg", alt: "Strategi" },
+                { title: "Manajemen Alat Eksekusi", src: "/assets/images/template/icon-chart.svg", alt: "Alat" },
+                { title: "Penyelesaian Rute & Serah Terima", src: "/assets/images/template/icon-globe.svg", alt: "Serah Terima" },
+              ].map((card, index) => (
                 <div key={index}>
                   <div className="vstack items-start justify-between gap-2 lg:gap-4 p-2 xl:p-3 min-h-200px border border-dark dark:border-white dark:border-opacity-15 text-dark dark:text-white dark:bg-gradient-45 from-tertiary-600 to-transparent rounded-1-5">
                     <span className="icon mb-narrow w-48px h-48px cstack bg-primary border border-dark dark:border-white dark:border-opacity-15 rounded-default">
                       <Image
                         className="w-24px text-tertiary-700"
                         alt={card.alt}
-                        src={card.src}
+                        src="/assets/images/apps/drive.svg" // fallback icon due to missing asset, or any placeholder
                         width={24}
                         height={24}
                         data-uc-svg=""

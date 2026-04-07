@@ -1,7 +1,22 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-export default function Hero() {
+
+export default function Hero({ data }) {
+  const content = data || {
+    title: (
+      <>
+        Layanan Logistik <br />
+        <span className="text-primary dark:text-secondary">
+          Domestik Terpadu
+        </span>
+        <br />untuk Bisnis Anda.
+      </>
+    ),
+    desc: "Jangkauan pengiriman darat, laut, dan udara ke seluruh penjuru Nusantara. Solusi distribusi barang secara efektif sesuai dengan ketepatan waktu operasional Anda.",
+    footer: "Menyediakan pilihan *Full Truckload (FTL)* maupun *Less than Truckload (LTL)*.",
+  };
+
   return (
     <div id="hero_header" className="hero-header section panel overflow-hidden">
       <div className="position-cover bg-secondary dark:bg-gray-800" />
@@ -15,55 +30,28 @@ export default function Hero() {
                   data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
                 >
                   <h1 className="h2 xl:display-5 mb-1 xl:mb-2">
-                    Tools that cover <br />
-                    <span className="text-primary dark:text-secondary">
-                      all aspects{" "}
-                    </span>
-                    of your growing business.
+                    {content.title}
                   </h1>
                   <p className="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">
-                    Say goodbye to the hassle of managing multiple software and
-                    tools for different tasks. Lexend offers a comprehensive
-                    suite of tools that cover all aspects of your business.
+                    {content.desc}
                   </p>
-                  <form
-                    onSubmit={(e) => e.preventDefault()}
-                    className="row child-cols g-1 mt-1 sm:mt-2"
-                  >
-                    <div>
-                      <div className="form-icon-group inline-block">
-                        <input
-                          type="email"
-                          className="form-control rounded-default h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
-                          placeholder="Your email.."
-                          required
-                        />
-                        <span className="form-icon text-gray dark:text-gray-300">
-                          <i className="unicon-email icon-1" />
-                        </span>
-                      </div>
-                    </div>
-                    <div className="col-12 sm:col-auto">
-                      <Link
-                        href={`/page-pricing`}
-                        className="btn btn-md btn-primary rounded-default h-48px w-100 lg:min-w-150px text-white"
-                      >
-                        <span className="d-none md:d-block">
-                          Try it out for free
-                        </span>
-                        <span className="d-block md:d-none">Sign up</span>
-                      </Link>
-                    </div>
-                  </form>
-                  <p className="fs-7 text-dark dark:text-white text-opacity-70">
-                    We care about your data in our
+                  <div className="hstack gap-2 mt-4 sm:mt-5">
                     <Link
-                      href={`/page-privacy`}
-                      className="uc-link text-underline dark:text-secondary"
+                      href={`/page-contact`}
+                      className="btn btn-md btn-primary rounded-default h-48px w-100 lg:min-w-150px text-white"
                     >
-                      privacy policy
+                      Dapatkan Penawaran
                     </Link>
-                    .
+                    <Link
+                      href="https://wa.me/6289602733848"
+                      className="btn btn-md bg-white border border-gray-900 border-opacity-20 rounded-default h-48px w-100 lg:min-w-150px text-dark dark:bg-gray-800 dark:text-white"
+                      target="_blank"
+                    >
+                      Hubungi Agen
+                    </Link>
+                  </div>
+                  <p className="fs-7 text-dark dark:text-white text-opacity-70 mt-2">
+                    {content.footer}
                   </p>
                 </div>
               </div>

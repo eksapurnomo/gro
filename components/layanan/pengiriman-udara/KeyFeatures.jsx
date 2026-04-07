@@ -1,14 +1,6 @@
+import { features4 } from "@/data/features";
 import React from "react";
 import Link from "next/link";
-
-const airFreightFeatures = [
-  { icon: "unicon-rocket", title: "Pengiriman Ekspres", description: "Pengiriman door-to-door dalam waktu tercepat, termasuk pengiriman same-day." },
-  { icon: "unicon-earth", title: "Jangkauan Global", description: "Koneksi ke ratusan destinasi internasional melalui jaringan mitra maskapai global." },
-  { icon: "unicon-cube", title: "Penanganan Khusus", description: "Penanganan ahli untuk barang berharga, dokumen penting, dan kargo sensitif." },
-  { icon: "unicon-location-pin-alt", title: "Pelacakan Real-time", description: "Pantau status pengiriman Anda secara real-time dari pick-up hingga tiba di tujuan." },
-  { icon: "unicon-document", title: "Pengurusan Dokumen", description: "Bantuan ahli dalam pengurusan dokumen kepabeanan dan perizinan ekspor-impor." },
-  { icon: "unicon-shield-check", title: "Asuransi Kargo", description: "Proteksi asuransi komprehensif untuk ketenangan pikiran selama proses pengiriman." },
-];
 
 export default function KeyFeatures() {
   return (
@@ -24,15 +16,15 @@ export default function KeyFeatures() {
                 className="title h3 lg:h2 xl:h1 m-0 text-center max-w-550px mx-auto"
                 data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 250;"
               >
-                Keunggulan Layanan Pengiriman Udara
-                <span className="text-primary"> CND.</span>
+                Review quickly and confidently using
+                <span className="text-primary"> Lexend.</span>
               </h2>
               <div className="panel">
                 <div
                   className="row child-cols-12 sm:child-cols-6 lg:child-cols-4 col-match g-3"
                   data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
                 >
-                  {airFreightFeatures.map((feature, index) => (
+                  {features4.map((feature, index) => (
                     <div key={index}>
                       <div className="feature-item panel p-4 border rounded-2 hover:bg-white dark:hover:bg-secondary dark:text-white dark:hover:text-gray-900 hover:scale-105 duration-150 transition-all">
                         <div className="vstack panel min-h-250px">
@@ -51,7 +43,7 @@ export default function KeyFeatures() {
                             </div>
                           </div>
                           <Link
-                            href={`/page-contact`}
+                            href={`/page-features`}
                             className="position-cover"
                           ></Link>
                         </div>

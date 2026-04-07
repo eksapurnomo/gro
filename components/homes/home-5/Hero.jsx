@@ -1,7 +1,22 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-export default function Hero() {
+export default function Hero({ data }) {
+  const title = data?.title || (
+    <>
+      Pengiriman Laut yang <br className="d-none lg:d-block" />
+      <strong>Andal & Efisien</strong>
+    </>
+  );
+  const description = data?.description || (
+    <>
+      Kapasitas Besar, Biaya Lebih Kompetitif. <br className="d-none lg:d-block" />
+      Solusi logistik jalur laut kami dirancang khusus untuk mengoptimalkan pengiriman kargo dalam skala besar secara aman ke seluruh dunia.
+    </>
+  );
+  const note = data?.note || "Layanan *FCL (Full Container Load)* dan *LCL (Less than Container Load)* tersedia.";
+  const imageSrc = data?.imageSrc || "/assets/images/template/hero-05.jpg";
+
   return (
     <div
       id="hero_header"
@@ -17,47 +32,32 @@ export default function Hero() {
                   className="panel vstack gap-2 text-center lg:text-start rtl:lg:text-end xl:me-4"
                   data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
                 >
-                  <h1 className="h2 sm:display-6 xl:display-4 fw-light mb-1 xl:mb-2">
-                    Use Data &amp; AI, Responsibly
+                  <h1 className="h3 sm:h2 xl:h1 fw-light mb-1 xl:mb-2">
+                    {title}
                   </h1>
-                  <p className="fs-6 xl:fs-4">
-                    Unlock your productivity potential with our
-                    <br className="d-none lg:d-block" />
-                    intuitive and powerful to-do app. Manage tasks, set
-                    priorities, collaborate with your team, and track progress
-                    effortlessly.
+                  <p className="fs-6 xl:fs-5">
+                    {description}
                   </p>
                   <div className="vstack gap-1 mt-2 xl:mt-4">
-                    <form
-                      onSubmit={(e) => e.preventDefault()}
-                      className="row child-cols g-1"
-                    >
-                      <div>
-                        <div className="form-group inline-block">
-                          <input
-                            type="email"
-                            className="form-control rounded-default h-48px w-full text-black bg-white"
-                            placeholder="Enter your email"
-                            required
-                          />
-                        </div>
-                      </div>
-                      <div className="col-12 sm:col-auto">
-                        <button className="btn btn-md btn-primary rounded-default h-48px w-100 lg:min-w-150px text-white">
-                          Get a demo
-                        </button>
-                      </div>
-                    </form>
-                    <p className="fs-7 text-dark dark:text-white text-opacity-70">
-                      We care about your data in our
-                      <Link
-                        href={`/page-privacy`}
-                        className="uc-link text-underline dark:text-secondary"
-                      >
-                        privacy policy
-                      </Link>
-                      .
+                    <div className="hstack gap-2 mt-1">
+                        <Link
+                          href={`/page-contact`}
+                          className="btn btn-md btn-primary rounded-default h-48px w-100 lg:min-w-150px text-white"
+                        >
+                          Dapatkan Penawaran
+                        </Link>
+                        <Link
+                          href="https://wa.me/6289602733848"
+                          className="btn btn-md bg-white border border-gray-900 border-opacity-20 rounded-default h-48px w-100 lg:min-w-150px text-dark dark:bg-gray-800 dark:text-white"
+                          target="_blank"
+                        >
+                          Tanya Agen CND
+                        </Link>
+                    </div>
+                    <p className="fs-7 text-dark dark:text-white text-opacity-70 mt-2">
+                      {note}
                     </p>
+
                   </div>
                   <div className="vstack md:hstack justify-center lg:justify-start gap-2 mt-2 xl:mt-4 fdr">
                     <div className="hstack justify-center gap-0">
@@ -162,7 +162,7 @@ export default function Hero() {
                     <Image
                       className="media-cover image"
                       alt="image"
-                      src="/assets/images/template/hero-05.jpg"
+                      src={imageSrc}
                       width="1184"
                       height="1280"
                     />

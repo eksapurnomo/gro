@@ -1,7 +1,22 @@
-import { factItems } from "@/data/facts";
 import React from "react";
 
-export default function Facts() {
+const domesticFacts = [
+  { value: "50+", description: "Kota Tujuan Pengiriman" },
+  { value: "100+", description: "Armada Truk & Kendaraan" },
+  { value: "98%", description: "Ketepatan Waktu Pengiriman (SLA)" },
+];
+
+export default function Facts({ data }) {
+  const content = data || {
+    title: "Layanan Logistik Darat Paling Ekstensif di Indonesia",
+    description: "Kapasitas besar, titik cabang tersebar meluas, dan rekam jejak pengiriman yang unggul.",
+    facts: [
+      { value: "50+", description: "Kota Tujuan Pengiriman" },
+      { value: "100+", description: "Armada Truk & Kendaraan" },
+      { value: "98%", description: "Ketepatan Waktu Pengiriman (SLA)" },
+    ]
+  };
+
   return (
     <div
       id="facts_numbers"
@@ -15,11 +30,10 @@ export default function Facts() {
               data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
               <h2 className="h4 md:h3 m-0">
-                Everything you need is right at your fingertips
+                {content.title}
               </h2>
               <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
-                Lexend is designed to make your work life easier and more
-                efficient.
+                {content.description}
               </p>
             </div>
             <div
@@ -30,7 +44,7 @@ export default function Facts() {
                 className="row child-cols col-match items-center justify-center text-center gy-4 lg:gy-8"
                 data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
               >
-                {factItems.map((fact, index) => (
+                {content.facts.map((fact, index) => (
                   <div key={index}>
                     <div className="fact-item panel vstack gap-1">
                       <h5 className="h3 md:h2 lg:h1 xl:display-5 m-0 text-primary dark:text-secondary">

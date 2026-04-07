@@ -2,8 +2,14 @@
 import Image from "next/image";
 import { useState } from "react";
 import ModalVideo from "@/components/common/ModalVideo";
-export default function Testimonials() {
+export default function Testimonials({ data }) {
   const [isOpen, setOpen] = useState(false);
+  const content = data || {
+    quote: "“CND Logistics sangat memahami urgensi bisnis distribusi skala nasional. Armada dan jaringan jalur darat mereka selalu siap memenuhi komitmen jadwal kami, bahkan di musim padat sekalipun.”",
+    name: "Ahmad Wijaya",
+    role: "Supply Chain Director",
+  };
+
   return (
     <>
       <div
@@ -30,37 +36,15 @@ export default function Testimonials() {
                         <div className="sm:col-6 lg:col-8">
                           <div className="panel vstack justify-between gap-3 px-3 py-4 lg:px-5 lg:py-6">
                             <div className="panel vstack items-start gap-2">
-                              <div className="panel">
-                                <div className="hstack h-48px">
-                                  <Image
-                                    className="w-128px dark:d-none"
-                                    alt="Brand"
-                                    src="/assets/images/brands/brand-08.svg"
-                                    width="163"
-                                    height="48"
-                                  />
-                                  <Image
-                                    className="w-128px d-none dark:d-inline-flex"
-                                    alt="Brand"
-                                    src="/assets/images/brands/brand-08-dark.svg"
-                                    width="163"
-                                    height="48"
-                                  />
-                                </div>
-                              </div>
                               <p className="fs-5 lg:fs-4 xl:fs-3 fw-medium text-dark dark:text-white">
-                                “We are based in Europe and the latest Data
-                                Protection Regulation forces us to look for
-                                service suppliers than comply with this
-                                regulation and as we look to create our website
-                                and this builder just outstanding!”
+                                {content.quote}
                               </p>
                             </div>
                             <div className="panel mt-2 lg:mt-4">
                               <div className="panel vstack items-start gap-0 lg:gap-1">
-                                <h6 className="h6 lg:h5 m-0">Sarah Edrissi</h6>
+                                <h6 className="h6 lg:h5 m-0">{content.name}</h6>
                                 <span className="fs-7 lg:h6 opacity-70">
-                                  Lead Marketing
+                                  {content.role}
                                 </span>
                               </div>
                             </div>

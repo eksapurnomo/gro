@@ -1,47 +1,6 @@
+import { features3 } from "@/data/features";
 import React from "react";
 import Image from "next/image";
-
-const logisticsFeatures = [
-  {
-    step: "01.",
-    title: "Perencanaan Rute & Penjemputan",
-    description: "Kami menganalisis kebutuhan pengiriman Anda untuk menentukan rute udara paling efisien, disusul dengan penjemputan barang tepat waktu dari lokasi Anda.",
-    imgSrc: "/assets/images/template/feature-01.png",
-    altText: "Perencanaan rute logistik",
-    testimonial: {
-      quote: "Sistem penjadwalan mereka sangat andal. Penjemputan tidak pernah terlambat dari waktu yang dijanjikan.",
-      imgSrc: "/assets/images/avatars/02.png",
-      name: "Sinta Wijaya",
-      role: "Manajer Supply Chain",
-    },
-  },
-  {
-    step: "02.",
-    title: "Customs Clearance & Handling",
-    description: "Tim ahli kami menangani seluruh proses dokumentasi, perizinan, dan bea cukai untuk memastikan kargo udara Anda dapat melewati batas negara tanpa masalah.",
-    imgSrc: "/assets/images/template/feature-02.png",
-    altText: "Proses customs clearance & handling",
-    testimonial: {
-      quote: "Bantuan dokumen dari CND membuat proses ekspor produk kami yang tadinya rumit menjadi sangat sederhana.",
-      imgSrc: "/assets/images/avatars/03.png",
-      name: "Andi Hermawan",
-      role: "CEO, TechLog Nusantara",
-    },
-  },
-  {
-    step: "03.",
-    title: "Pemantauan Udara Real-time",
-    description: "Nikmati transparansi penuh atas kargo Anda. Lacak posisi penerbangan dan estimasi waktu ketibaan dengan sistem tracking terpadu kami.",
-    imgSrc: "/assets/images/template/feature-03.png",
-    altText: "Pemantauan penerbangan logistik udara",
-    testimonial: {
-      quote: "Fitur lacak kargo ini memberi kami kedamaian pikiran. Kami selalu tahu di mana posisi barang penting kami.",
-      imgSrc: "/assets/images/avatars/01.png",
-      name: "Budi Santoso",
-      role: "Direktur Ekspor",
-    },
-  },
-];
 
 export default function Features() {
   return (
@@ -50,7 +9,7 @@ export default function Features() {
         <div className="container sm:max-w-md lg:max-w-lg xl:max-w-xl">
           <div className="section-inner panel">
             <div className="panel vstack gap-4 sm:gap-6 lg:gap-8">
-              {logisticsFeatures.map((feature, i) => (
+              {features3.map((feature, i) => (
                 <React.Fragment key={i}>
                   <div
                     className="feature-item panel"
@@ -120,7 +79,7 @@ export default function Features() {
                       </div>
                     </div>
                   </div>
-                  {i !== logisticsFeatures.length - 1 && (
+                  {i !== features3.length - 1 && (
                     <hr
                       className="border-gray-100 dark:border-opacity-15 m-0 opacity-100"
                       data-anime="onview: -200; width: [0, '100%']; easing: easeInOutExpo; duration: 750; delay: 100;"

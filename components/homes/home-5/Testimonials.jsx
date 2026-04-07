@@ -1,7 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-export default function Testimonials() {
+export default function Testimonials({ data }) {
+  const customData = data || {
+    quote: "“Pengiriman laut CND sangat efisien untuk distribusi material curah kami. Estimasi waktu kedatangannya selalu akurat, dan laporan pelacakannya membuat tim operasional kami tenang melihat pergerakan kargo antar benua.”",
+    name: "Reza Pahlevi",
+    role: "Direktur Operasional, PT Logistik Internasional"
+  };
+
   return (
     <div
       id="clients_feedbacks"
@@ -22,36 +28,15 @@ export default function Testimonials() {
                   <div className="panel vstack justify-center gap-3 rounded-2 bg-secondary dark:bg-white dark:bg-opacity-5 overflow-hidden text-center">
                     <div className="panel vstack justify-center gap-3 px-3 py-4 lg:px-5 lg:py-6">
                       <div className="panel vstack items-center gap-2">
-                        <div className="panel">
-                          <div className="hstack h-48px">
-                            <Image
-                              className="w-128px dark:d-none"
-                              alt="Brand"
-                              src="/assets/images/brands/brand-01.svg"
-                              width="165"
-                              height="48"
-                            />
-                            <Image
-                              className="w-128px d-none dark:d-inline-flex"
-                              alt="Brand"
-                              src="/assets/images/brands/brand-01-dark.svg"
-                              width="165"
-                              height="48"
-                            />
-                          </div>
-                        </div>
                         <p className="fs-5 lg:fs-4 xl:fs-3 fw-medium text-dark dark:text-white lg:px-6">
-                          “We’re looking for people who share our vision! most
-                          of our time used to be taken up by most of alternate
-                          administrative work whereas now we can focus on
-                          building out to help our employees.”
+                          {customData.quote}
                         </p>
                       </div>
                       <div className="panel mt-2 lg:mt-4">
                         <div className="panel vstack items-center gap-0 lg:gap-1">
-                          <h6 className="h6 lg:h5 m-0">Anna Yon</h6>
+                          <h6 className="h6 lg:h5 m-0">{customData.name}</h6>
                           <span className="fs-7 lg:h6 opacity-70">
-                            Senior UI/UX Designer
+                            {customData.role}
                           </span>
                         </div>
                       </div>
@@ -59,13 +44,6 @@ export default function Testimonials() {
                   </div>
                 </div>
               </div>
-              <a
-                href="#"
-                className="uc-link dark:text-secondary fw-bold d-inline-flex items-center gap-narrow"
-              >
-                <span>See all feedbacks</span>
-                <i className="icon icon-1 unicon-arrow-right rtl:rotate-180" />
-              </a>
             </div>
           </div>
         </div>

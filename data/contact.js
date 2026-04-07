@@ -5,7 +5,7 @@ export const panels = [
     darkIcon: "/assets/images/template/icon-location-dark.svg",
     altText: "location-icon",
     title: "Kunjungi Kami",
-    description: "Jl. Raya Logistik No. 10, Jakarta Selatan, DKI Jakarta",
+    description: "JalanHOSCokroaminotoNo352B,RT001/RW017,Kelurahan Darat Sekip, Kecamatan Pontianak Kota,Kalimantan Ba",
     linkText: "Lihat di peta",
     linkUrl: "https://maps.google.com",
   },

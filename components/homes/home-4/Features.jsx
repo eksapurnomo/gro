@@ -1,8 +1,46 @@
-import { featureItems } from "@/data/features";
 import React from "react";
 import Image from "next/image";
 
-export default function Features() {
+const domesticFeaturesItems = [
+  {
+    imageSrc: "/assets/images/template/feature-image-01.jpg",
+    icon: "unicon-delivery-truck",
+    title: "Pengiriman Darat Antar Kota",
+    description: "Jalur darat menghubungkan pusat bisnis dan industri antar provinsi secara aman. Full Truck Load (FTL) maupun Less Truck Load (LTL).",
+    reverseOrder: false,
+  },
+  {
+    imageSrc: "/assets/images/template/feature-image-02.jpg",
+    icon: "unicon-ship",
+    title: "Pengiriman Antar Pulau",
+    description: "Kami menyediakan konektivitas antar pulau di Indonesia melalui jalur laut dan udara, memastikan supply chain bisnis Anda tak terputus.",
+    reverseOrder: true,
+  },
+];
+
+export default function Features({ data }) {
+  const content = data || {
+    badge: "Layanan Utama",
+    title: "Penuhi Permintaan Pasar di Seluruh Penjuru",
+    description: "Bergabung dengan ribuan sektor industri yang telah mempercayakan pengangkutan distribusinya melalui darat dan laut domestik kepada CND Logistics.",
+    items: [
+      {
+        imageSrc: "/assets/images/template/feature-image-01.jpg",
+        icon: "unicon-delivery-truck",
+        title: "Pengiriman Darat Antar Kota",
+        description: "Jalur darat menghubungkan pusat bisnis dan industri antar provinsi secara aman. Full Truck Load (FTL) maupun Less Truck Load (LTL).",
+        reverseOrder: false,
+      },
+      {
+        imageSrc: "/assets/images/template/feature-image-02.jpg",
+        icon: "unicon-ship",
+        title: "Pengiriman Antar Pulau",
+        description: "Kami menyediakan konektivitas antar pulau di Indonesia melalui jalur laut dan udara, memastikan supply chain bisnis Anda tak terputus.",
+        reverseOrder: true,
+      },
+    ]
+  };
+
   return (
     <div
       id="main_features"
@@ -16,21 +54,20 @@ export default function Features() {
               data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
               <span className="fw-bold text-primary dark:text-secondary">
-                Main features
+                {content.badge}
               </span>
               <h2 className="h3 lg:h2 xl:h1 m-0">
-                A CRM tools help you keep track of leads
+                {content.title}
               </h2>
               <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
-                Join the thousands of satisfied users and take your business to
-                the next level. Trusted by over 2,500 startups.
+                {content.description}
               </p>
             </div>
             <div
               className="row child-cols-12 g-6 md:g-8 xl:g-6"
               data-uc-scrollspy="target: >*; delay: 500; cls: uc-animation-slide-bottom-medium"
             >
-              {featureItems.map((elm, i) => (
+              {content.items.map((elm, i) => (
                 <div key={i}>
                   <div className="feature-item panel">
                     <div className="row child-cols items-center justify-between g-2 md:g-4">
@@ -74,10 +111,10 @@ export default function Features() {
                                   {elm.description}
                                 </p>
                                 <a
-                                  href="#"
+                                  href={`/page-contact`}
                                   className="uc-link dark:text-secondary fw-bold hstack gap-narrow sm:mt-1 lg:mt-2"
                                 >
-                                  <span>Let's find out</span>
+                                  <span>Konsultasikan Pengiriman</span>
                                   <i className="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px" />
                                 </a>
                               </div>

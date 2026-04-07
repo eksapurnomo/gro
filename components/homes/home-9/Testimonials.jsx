@@ -42,14 +42,14 @@ export default function Testimonials() {
             >
               <div className="section-header vstack items-center gap-2 lg:gap-3">
                 <span className="fs-7 fw-medium py-narrow px-2 bg-dark text-white dark:bg-primary dark:text-dark rounded-pill">
-                  Clients feedback
+                  Testimoni Pelanggan
                 </span>
                 <h2 className="h4 sm:h3 lg:h1 m-0 text-center max-w-650px mx-auto">
-                  What our{" "}
+                  Telah Dipercaya oleh berbagai{" "}
                   <span className="text-tertiary dark:text-primary">
-                    satisfied clients
+                    vendor & kontraktor
                   </span>{" "}
-                  said about us!
+                  skala nasional!
                 </h2>
               </div>
               <div
@@ -65,7 +65,11 @@ export default function Testimonials() {
                   data-uc-grid="masonry: true;"
                   ref={isotopContainer}
                 >
-                  {testimonials5.map(({ text, name, imgSrc }, index) => (
+                  {[
+                    { text: "Tim CND tidak tertandingi dalam hal OOG (Out of Gauge) shipping. Mereka mengangkut komponen turbin PLN kami secara presisi hingga serah terima di pedalaman berjalan sempurna tanpa goresan.", name: "Hendrik P.", imgSrc: "/assets/images/avatars/04.png" },
+                    { text: "Logistics Project tidak main-main. CND memfasilitasi chartered vessel dan perizinan bea cukai secara satu atap, meringankan beban pikiran perusahaan konstruksi kami.", name: "Siti Rahma", imgSrc: "/assets/images/avatars/03.png" },
+                    { text: "Luar biasa detail. Risk assessment dilakukan secara menyeluruh dari titik jemput hingga site plan tujuan, menjamin tak ada biaya tak terduga yang mencekik anggaran EPC kami.", name: "Darius M.", imgSrc: "/assets/images/avatars/02.png" }
+                  ].map(({ text, name, imgSrc }, index) => (
                     <div key={index} className={`isotop-element mt-4`}>
                       <div className="px-3 sm:px-4 py-4 panel  vstack justify-between gap-3 dark:bg-gradient-45 from-tertiary to-transparent border border-dark dark:border-white dark:border-opacity-15 rounded-1-5 lg:rounded-2">
                         <div className="panel vstack items-start gap-2">
@@ -123,7 +127,7 @@ export default function Testimonials() {
                   data-anime="onview: -200; translateY: [-16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 350;"
                 >
                   <p className="fs-6 m-0">
-                    Trusted by over most popular companies worldwide
+                    Kemitraan Jangka Panjang bersama Vendor & Kontraktor Terkemuka
                   </p>
                   <div className="panel">
                     <div className="row child-cols g-6 items-center text-center">
