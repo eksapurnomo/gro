@@ -13,15 +13,20 @@ export const menuItems = [
       {
         label: "Pengiriman Barang",
         subItems: [
-          { href: "/layanan/pengiriman-udara", label: "Pengiriman Udara" },
-          { href: "/layanan/pengiriman-laut", label: "Pengiriman Laut" },
-          { href: "/layanan/pengiriman-domestik", label: "Pengiriman Domestik" },
-          { href: "/layanan/pengiriman-internasional", label: "Pengiriman Internasional" },
+          { href: "/layanan/freight-forwarder", label: "Freight Forwarder" },
+          { href: "/layanan/pengiriman-container", label: "Pengiriman Container" },
+          { href: "/layanan/ekspedisi", label: "Ekspedisi" },
+          { href: "/layanan/trucking-nasional", label: "Trucking Nasional" },
         ],
       },
-      { href: "/layanan/transportasi-darat", label: "Transportasi Darat" },
-      { href: "/layanan/pergudangan", label: "Pergudangan" },
-      { href: "/layanan/proyek", label: "Proyek" },
+      {
+        label: "Kategori Layanan",
+        subItems: [
+          { href: "/layanan/domestik", label: "Domestik" },
+          { href: "/layanan/ekspor", label: "Ekspor" },
+          { href: "/layanan/impor", label: "Impor" },
+        ],
+      },
     ],
   },
   { id: 4, href: "/bermitra", label: "Bermitra" },
@@ -63,11 +68,10 @@ export const othermenuItems = [
   { href: "/page-career", icon: "unicon-wikis", title: "Karir" },
   { href: "/page-contact", icon: "unicon-wikis", title: "Kontak" },
   { href: "/blog", icon: "unicon-course", title: "Blog" },
-  { href: "/layanan/pengiriman-udara", icon: "unicon-wikis", title: "Pengiriman Udara" },
-  { href: "/layanan/pengiriman-laut", icon: "unicon-wikis", title: "Pengiriman Laut" },
-  { href: "/layanan/transportasi-darat", icon: "unicon-wikis", title: "Transportasi Darat" },
-  { href: "/layanan/pergudangan", icon: "unicon-wikis", title: "Pergudangan" },
-  { href: "/layanan/proyek", icon: "unicon-wikis", title: "Proyek" },
+  { href: "/layanan/freight-forwarder", icon: "unicon-wikis", title: "Freight Forwarder" },
+  { href: "/layanan/pengiriman-container", icon: "unicon-wikis", title: "Pengiriman Container" },
+  { href: "/layanan/ekspedisi", icon: "unicon-wikis", title: "Ekspedisi" },
+  { href: "/layanan/trucking-nasional", icon: "unicon-wikis", title: "Trucking Nasional" },
 ];
 
 export const mainPages = [
@@ -90,23 +94,20 @@ export const links = [
 
 export const featurePageLinks = [
   {
-    title: "Pengiriman Barang",
+    title: "Layanan Utama",
     icon: "unicon-cube",
     items: [
-      { icon: "icon-01.svg", title: "Pengiriman Udara", description: "Cepat & aman via jalur udara" },
-      { icon: "icon-02.svg", title: "Pengiriman Laut", description: "Kapasitas besar, harga kompetitif" },
-      { icon: "icon-03.svg", title: "Pengiriman Domestik", description: "Ke seluruh wilayah Indonesia" },
-      { icon: "icon-07.svg", title: "Pengiriman Internasional", description: "Ekspor & impor ke seluruh dunia" },
+      { icon: "icon-01.svg", title: "Freight Forwarder", description: "Layanan pengurusan transportasi barang" },
+      { icon: "icon-02.svg", title: "Pengiriman Container", description: "Pengiriman FCL & LCL andal" },
     ],
     viewAllText: "Lihat semua layanan",
   },
   {
-    title: "Layanan Lainnya",
+    title: "Layanan Ekspedisi",
     icon: "unicon-gamification",
     items: [
-      { icon: "icon-04.svg", title: "Transportasi Darat", description: "Trucking andal & tepat waktu" },
-      { icon: "icon-05.svg", title: "Pergudangan", description: "Penyimpanan aman & terorganisir" },
-      { icon: "icon-06.svg", title: "Proyek", description: "Logistik proyek skala besar" },
+      { icon: "icon-04.svg", title: "Ekspedisi", description: "Pengiriman reguler & cepat" },
+      { icon: "icon-05.svg", title: "Trucking Nasional", description: "Jaringan armada darat terpadu" },
     ],
     viewAllText: "Lihat semua layanan",
   },

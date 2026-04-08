@@ -175,7 +175,7 @@ export default function Hero({ data }) {
                     <Image
                       alt="Countries"
                       data-anime="onscroll: .hero-scroll-scene; onscroll-offset: -200; onscroll-trigger: 0; onscroll-duration: 400%; translateY: [-100, 0];"
-                      src="/assets/images/template/hero-05-countries.png"
+                      src="/assets/images/cnd/widget-map.png"
                       width="710"
                       height="854"
                     />
@@ -188,7 +188,7 @@ export default function Hero({ data }) {
                     <Image
                       alt="Account"
                       data-anime="onscroll: .hero-scroll-scene; onscroll-offset: -200; onscroll-trigger: 0; onscroll-duration: 400%; translateY: [100, 0];"
-                      src="/assets/images/template/hero-05-account.png"
+                      src="/assets/images/cnd/widget-account.png"
                       width="605"
                       height="274"
                     />

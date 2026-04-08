@@ -6,15 +6,17 @@ import { useState } from "react";
 
 const layananMenu = {
   pengirimanBarang: [
-    { href: "/layanan/pengiriman-udara", label: "Pengiriman Udara", icon: "✈️", desc: "Cepat & aman via jalur udara" },
-    { href: "/layanan/pengiriman-laut", label: "Pengiriman Laut", icon: "🚢", desc: "Kapasitas besar, harga kompetitif" },
-    { href: "/layanan/pengiriman-domestik", label: "Pengiriman Domestik", icon: "🏠", desc: "Ke seluruh wilayah Indonesia" },
-    { href: "/layanan/pengiriman-internasional", label: "Pengiriman Internasional", icon: "🌏", desc: "Ekspor & impor ke seluruh dunia" },
+    { href: "/layanan/freight-forwarder", label: "Freight Forwarder", icon: "🌐", desc: "Layanan pengurusan transportasi barang" },
+    { href: "/layanan/pengiriman-container", label: "Pengiriman Container", icon: "🚢", desc: "Pengiriman FCL & LCL andal" },
   ],
   others: [
-    { href: "/layanan/transportasi-darat", label: "Transportasi Darat", icon: "🚛", desc: "Trucking andal & tepat waktu" },
-    { href: "/layanan/pergudangan", label: "Pergudangan", icon: "🏭", desc: "Penyimpanan aman & terorganisir" },
-    { href: "/layanan/proyek", label: "Proyek", icon: "⚙️", desc: "Logistik proyek skala besar" },
+    { href: "/layanan/ekspedisi", label: "Ekspedisi", icon: "📦", desc: "Pengiriman reguler & cepat" },
+    { href: "/layanan/trucking-nasional", label: "Trucking Nasional", icon: "🚛", desc: "Jaringan armada darat terpadu" },
+  ],
+  kategori: [
+    { href: "/layanan/domestik", label: "Domestik", icon: "🇮🇩", desc: "Pengiriman dari semua daerah di Indonesia dalam FCL (Full Container Load) atau LCL (Less Container Load)" },
+    { href: "/layanan/ekspor", label: "Ekspor", icon: "🛳️", desc: "Kami menawar jasa pengurusan dokumen & pengiriman barang ekspor Door-To-Port FCL (Full Container Load)" },
+    { href: "/layanan/impor", label: "Impor", icon: "🛬", desc: "Kami menawar jasa pengurusan dokumen & pengantaran barang impor Port-To-Door dalam FCL (Full Container Load)" }
   ],
 };
 
@@ -53,7 +55,7 @@ export default function Nav() {
         <div
           className="uc-navbar-dropdown uc-drop"
           style={{ 
-            minWidth: "640px", 
+            minWidth: "900px", 
             padding: "8px 0", 
             backgroundColor: "#ffffff", 
             color: "#111827",
@@ -62,7 +64,7 @@ export default function Nav() {
             border: "1px solid rgba(0,0,0,0.05)"
           }}
         >
-          <div style={{ padding: "16px 24px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px" }}>
+          <div style={{ padding: "16px 24px", display: "grid", gridTemplateColumns: "1fr 1fr 1.5fr", gap: "24px" }}>
             {/* Kolom Kiri: Pengiriman Barang */}
             <div>
               <p
@@ -169,6 +171,51 @@ export default function Nav() {
                   Minta Penawaran →
                 </Link>
               </div>
+            </div>
+
+            {/* Kolom Kanan: Kategori */}
+            <div>
+              <p
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 700,
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  color: "#6b7280",
+                  marginBottom: "12px",
+                  paddingLeft: "4px",
+                }}
+              >
+                Kategori Layanan
+              </p>
+              <ul className="uc-nav uc-navbar-dropdown-nav" style={{ gap: "4px" }}>
+                {layananMenu.kategori.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className={pathname === item.href ? "menuActive" : ""}
+                      style={{ 
+                        display: "flex", 
+                        alignItems: "flex-start", 
+                        gap: "10px", 
+                        padding: "8px 8px", 
+                        borderRadius: "8px",
+                        color: "inherit",
+                        textDecoration: "none",
+                        transition: "background-color 0.2s"
+                      }}
+                      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#f3f4f6"}
+                      onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
+                    >
+                      <span style={{ fontSize: "18px", lineHeight: 1, flexShrink: 0 }}>{item.icon}</span>
+                      <span>
+                        <span style={{ display: "block", fontWeight: 600, fontSize: "13px", color: "#111827" }}>{item.label}</span>
+                        <span style={{ display: "block", fontSize: "11px", color: "#6b7280" }}>{item.desc}</span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

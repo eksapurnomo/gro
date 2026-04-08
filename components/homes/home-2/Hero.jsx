@@ -47,14 +47,14 @@ export default function Hero() {
                     <Image
                       className="d-block dark:d-none"
                       alt="Main hero image"
-                      src="/assets/images/template/hero-two.png"
+                      src="/assets/images/cnd/hero-main.png"
                       width="1280"
                       height="941"
                     />
                     <Image
                       className="d-none dark:d-block"
                       alt="Main hero image"
-                      src="/assets/images/template/hero-two-dark.png"
+                      src="/assets/images/cnd/hero-main.png"
                       width="1280"
                       height="942"
                     />

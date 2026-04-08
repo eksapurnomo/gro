@@ -31,34 +31,34 @@ export const panelData = [
 export const features = [
   {
     id: 4,
-    imgSrc: "/assets/images/template/feature-01.svg",
-    imgAlt: "Share tools quickly and confidently in minutes",
+    imgSrc: "/assets/images/cnd/feature-1.png",
+    imgAlt: "Pengalaman luas dalam logistik",
     title: "Pengalaman",
     description:
       "Meskipun baru berdiri ,kami memiliki tim dengan pengalaman luas di industri logistik.",
   },
   {
     id: 5,
-    imgSrc: "/assets/images/template/feature-02.svg",
-    imgAlt: "Connect every part of your entire business",
+    imgSrc: "/assets/images/cnd/feature-2.png",
+    imgAlt: "Jangkauan seluruh Indonesia",
     title: "Wilayah Jangkauan",
     description:
-      "Kami melayani pengiriman ke berbagai kota besar di Indonesia..",
+      "Kami melayani pengiriman ke berbagai kota besar di Indonesia.",
     linkText: "See all integrations",
     linkHref: "#",
   },
   {
     id: 6,
-    imgSrc: "/assets/images/template/feature-03.svg",
-    imgAlt: "Maintain compliance and control your apps",
+    imgSrc: "/assets/images/cnd/feature-3.png",
+    imgAlt: "Layanan Terpadu CND Logistics",
     title: "Layanan Terpadu",
     description:
       "Solusi One-Stop Service yang memudahkan pengelolaan logistik Anda.",
   },
    {
-    id: 5,
-    imgSrc: "/assets/images/template/feature-08.svg",
-    imgAlt: "Connect every part of your entire business",
+    id: 7,
+    imgSrc: "/assets/images/cnd/feature-4.png",
+    imgAlt: "Dukungan pelanggan cepat tanggap",
     title: "Dukungan Pelanggan",
     description:
       "Tim kami siap membantu dan menjawab setiap pertanyaan Anda dengan cepat.",

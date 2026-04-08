@@ -63,13 +63,42 @@ export default function Howworks({ data }) {
                           {customData.block1.description}
                         </p>
                         <div className="panel w-100 mt-2 lg:mt-4">
-                          <ul
-                            className="uc-accordion-divider uc-accordion-chevron gap-5 uc-accordion"
-                            data-uc-accordion="collapsible: false"
-                            style={{ "--divider-gap": "40px" }}
-                          >
-                            <Accordion2 />
-                          </ul>
+                          {customData.block1.features ? (
+                            <div className="row child-cols-12 lg:child-cols-6 g-4 mt-4">
+                              {customData.block1.features.map((feature, i) => (
+                                <div key={i}>
+                                  <div className="panel vstack items-start gap-2">
+                                    <div className="cstack min-w-48px min-h-48px bg-primary rounded-circle">
+                                      <Image
+                                        className="icon icon-1 text-white image-filter-white"
+                                        alt="feature-icon"
+                                        data-uc-svg=""
+                                        src={feature.icon}
+                                        width="24"
+                                        height="24"
+                                      />
+                                    </div>
+                                    <div className="vstack gap-1 lg:gap-2">
+                                      <h5 className="h5 lg:h4 m-0">
+                                        {feature.title}
+                                      </h5>
+                                      <p className="fs-6">
+                                        {feature.desc}
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          ) : (
+                            <ul
+                              className="uc-accordion-divider uc-accordion-chevron gap-5 uc-accordion"
+                              data-uc-accordion="collapsible: false"
+                              style={{ "--divider-gap": "40px" }}
+                            >
+                              <Accordion2 />
+                            </ul>
+                          )}
                         </div>
                       </div>
                     </div>
