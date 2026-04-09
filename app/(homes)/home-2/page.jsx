@@ -4,7 +4,7 @@ import Header2 from "@/components/headers/Header2";
 import Cta from "@/components/homes/home-2/Cta";
 
 import Features from "@/components/homes/home-2/Features";
-import Feedback from "@/components/homes/home-2/Feedback";
+
 import Hero from "@/components/homes/home-2/Hero";
 import KeyFeatures from "@/components/homes/home-2/KeyFeatures";
 
@@ -24,10 +24,10 @@ export default function HomePage2() {
           <Hero />
           <Features />
           <KeyFeatures />
-          
-         
-          <Feedback />
-          
+
+
+
+
           <Cta />
         </div>
         <Footer1 />
