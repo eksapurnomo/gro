@@ -6,7 +6,7 @@ export default function KeyFeatures() {
   return (
     <div
       id="key_features"
-      className="key-features section panel overflow-hidden bg-secondary dark:bg-gray-800"
+      className="key-features section panel overflow-hidden bg-secondary dark:bg-gray-900"
     >
       <div className="section-outer panel py-6 xl:py-9">
         <div className="container sm:max-w-lg xl:max-w-xl">
@@ -16,7 +16,7 @@ export default function KeyFeatures() {
               data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
             >
               <h2 className="title h3 lg:h2 xl:h1 m-0 text-center max-w-550px mx-auto">
-                Prevent costly mistakes
+                Keunggulan Layanan Kami
               </h2>
               <div className="panel">
                 <div

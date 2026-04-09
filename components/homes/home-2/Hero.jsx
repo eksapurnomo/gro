@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div id="hero_header" className="hero-header section panel overflow-hidden">
-      <div className="section-outer panel py-6 xl:py-9 pt-9 lg:pt-10 bg-secondary dark:bg-gray-900">
+      <div className="section-outer panel py-6 xl:py-9 bg-secondary dark:bg-gray-900">
 
         <div className="container max-w-xl">
           <div className="section-inner panel py-4">

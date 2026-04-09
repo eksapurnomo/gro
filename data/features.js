@@ -69,31 +69,24 @@ export const features = [
 
 export const features2 = [
   {
-    icon: "unicon-document",
-    title: "Proposals",
+    icon: "unicon-pin-map",
+    title: "Pengiriman Cepat",
     description:
-      "Share Tools in minutes with pre-built, customizable templates.",
+      "Layanan pengiriman express ke seluruh Indonesia dengan jaminan tepat waktu.",
     backgroundColor: "bg-white dark:bg-gray-800",
   },
   {
-    icon: "unicon-model",
-    title: "Quotes",
+    icon: "unicon-location-map",
+    title: "Tracking Real-time",
     description:
-      "Find out in real time when they’re opened, viewed and signed.",
+      "Pantau paket Anda secara langsung dengan sistem tracking GPS dalam waktu nyata.",
     backgroundColor: "bg-primary text-white",
   },
   {
-    icon: "unicon-task-approved",
-    title: "Contracts",
+    icon: "unicon-headphones",
+    title: "Support 24/7",
     description:
-      "Use our native CRM integrations to pull customer data into your Tools fast.",
-    backgroundColor: "bg-white dark:bg-gray-800",
-  },
-  {
-    icon: "unicon-touch-interaction",
-    title: "eSignatures",
-    description:
-      "Keep your data secure with our legally-binding e-Signature software.",
+      "Tim customer service kami siap membantu Anda kapan saja, 24 jam setiap hari.",
     backgroundColor: "bg-white dark:bg-gray-800",
   },
 ];
