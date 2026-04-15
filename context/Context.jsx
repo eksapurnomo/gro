@@ -4,6 +4,7 @@ import { openCart } from "@/utlis/toggleCart";
 import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
 import { useContext, useState } from "react";
+import LanguageProvider from "./LanguageContext";
 const dataContext = React.createContext();
 export const useContextElement = () => {
   return useContext(dataContext);
@@ -130,8 +131,10 @@ export default function Context({ children }) {
     }
   }, [pathname, isDark]);
   return (
-    <dataContext.Provider value={contextElement}>
-      {children}
-    </dataContext.Provider>
+    <LanguageProvider>
+      <dataContext.Provider value={contextElement}>
+        {children}
+      </dataContext.Provider>
+    </LanguageProvider>
   );
 }

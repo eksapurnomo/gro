@@ -6,9 +6,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function MobileMenu() {
   const { isDark, handleToggle } = useContextElement();
+  const { lang, switchLang } = useLanguage();
   const pathname = usePathname();
   const [activeParent1, setActiveParent1] = useState(-1);
   const [activeParent2, setActiveParent2] = useState(-1);
@@ -18,22 +20,20 @@ export default function MobileMenu() {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
-        containerRef.current && // Check if click is inside #mobileMenu
+        containerRef.current &&
         containerRef.current.contains(event.target) &&
-        elementRef.current && // Check if click is outside .gt-menu-area
+        elementRef.current &&
         !elementRef.current.contains(event.target)
       ) {
         closeMobileMenu();
-        // Add your custom logic here
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
-
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
   useEffect(() => {
     closeMobileMenu();
   }, [pathname]);
@@ -65,6 +65,7 @@ export default function MobileMenu() {
     }
     return isActive;
   };
+
   return (
     <div
       ref={containerRef}
@@ -76,20 +77,17 @@ export default function MobileMenu() {
     >
       <div
         ref={elementRef}
-        className="uc-offcanvas-bar bg-white text-dark dark:bg-gray-900 dark:text-white uc-offcanvas-bar-animation uc-offcanvas-slide "
+        className="uc-offcanvas-bar bg-white text-dark dark:bg-gray-900 dark:text-white uc-offcanvas-bar-animation uc-offcanvas-slide"
         role="dialog"
         aria-modal="true"
         style={{ maxWidth: 876 }}
       >
         <header className="uc-offcanvas-header hstack justify-between items-center pb-2 bg-white dark:bg-gray-900">
           <div className="uc-logo">
-            <Link
-              href={`/`}
-              className="h5 text-none text-gray-900 dark:text-white"
-            >
+            <Link href={`/`} className="h5 text-none text-gray-900 dark:text-white">
               <Image
                 className="w-32px"
-                alt="Lexend"
+                alt="CND Logistic"
                 src="/assets/images/common/logo-mark.svg"
                 width="34"
                 height="34"
@@ -104,27 +102,52 @@ export default function MobileMenu() {
             <i className="unicon-close" />
           </button>
         </header>
+
         <div className="panel">
-          <form
-            onSubmit={(e) => e.preventDefault()}
-            id="search-panel"
-            className="form-icon-group vstack gap-1 mb-2 uc-sticky"
-            data-uc-sticky=""
-          >
-            <input
-              type="email"
-              className="form-control form-control-sm fs-7 rounded-default"
-              placeholder="Search.."
-            />
-            <span className="form-icon text-gray">
-              <i className="unicon-search icon-1" />
-            </span>
-          </form>
-          <div
-            className="uc-sticky-placeholder"
-            style={{ height: 40, width: 290, margin: "0px 0px 16px" }}
-            hidden=""
-          />
+          {/* Language Toggle */}
+          <div style={{ display: "flex", gap: "8px", marginBottom: "16px" }}>
+            <button
+              onClick={() => switchLang("id")}
+              style={{
+                flex: 1,
+                padding: "8px",
+                border: lang === "id" ? "2px solid #2563eb" : "1px solid #e5e7eb",
+                borderRadius: "8px",
+                background: lang === "id" ? "#eff6ff" : "transparent",
+                color: lang === "id" ? "#1d4ed8" : "#6b7280",
+                fontWeight: lang === "id" ? 700 : 500,
+                fontSize: "13px",
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "6px",
+              }}
+            >
+              <span>🇮🇩</span> Indonesia
+            </button>
+            <button
+              onClick={() => switchLang("en")}
+              style={{
+                flex: 1,
+                padding: "8px",
+                border: lang === "en" ? "2px solid #2563eb" : "1px solid #e5e7eb",
+                borderRadius: "8px",
+                background: lang === "en" ? "#eff6ff" : "transparent",
+                color: lang === "en" ? "#1d4ed8" : "#6b7280",
+                fontWeight: lang === "en" ? 700 : 500,
+                fontSize: "13px",
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "6px",
+              }}
+            >
+              <span>🇬🇧</span> English
+            </button>
+          </div>
+
           <ul className="nav-y gap-narrow fw-medium fs-6 uc-nav" data-uc-nav="">
             {menuItems.map((item, index) => (
               <li
@@ -134,12 +157,18 @@ export default function MobileMenu() {
                 }`}
               >
                 {item.href ? (
-                  <Link
-                    className={isMenuActive(item) ? "menuActive" : ""}
-                    href={item.href}
-                  >
-                    {item.label}
-                  </Link>
+                  item.external ? (
+                    <a href={item.href} target="_blank" rel="noopener noreferrer">
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      className={isMenuActive(item) ? "menuActive" : ""}
+                      href={item.href}
+                    >
+                      {item.label}
+                    </Link>
+                  )
                 ) : (
                   <>
                     <a
@@ -159,16 +188,14 @@ export default function MobileMenu() {
                         {item.subItems.map((subItem, index2) => (
                           <li
                             key={index2}
-                            className={`${!subItem.href ? "uc-parent" : ""}  ${
+                            className={`${!subItem.href ? "uc-parent" : ""} ${
                               activeParent2 == index2 ? "active" : ""
                             }`}
                             role="presentation"
                           >
                             {subItem.href ? (
                               <Link
-                                className={
-                                  isMenuActive(subItem) ? "menuActive" : ""
-                                }
+                                className={isMenuActive(subItem) ? "menuActive" : ""}
                                 href={subItem.href}
                               >
                                 {subItem.label}
@@ -176,9 +203,7 @@ export default function MobileMenu() {
                             ) : (
                               <>
                                 <a
-                                  className={
-                                    isMenuActive(subItem) ? "menuActive" : ""
-                                  }
+                                  className={isMenuActive(subItem) ? "menuActive" : ""}
                                   onClick={() =>
                                     setActiveParent2((pre) =>
                                       pre == index2 ? -1 : index2
@@ -196,18 +221,12 @@ export default function MobileMenu() {
                                     {subItem.subItems.map((subItem, index3) => (
                                       <li
                                         key={index3}
-                                        className={
-                                          !subItem.href ? "uc-parent" : ""
-                                        }
+                                        className={!subItem.href ? "uc-parent" : ""}
                                         role="presentation"
                                       >
                                         {subItem.href ? (
                                           <Link
-                                            className={
-                                              isMenuActive(subItem)
-                                                ? "menuActive"
-                                                : ""
-                                            }
+                                            className={isMenuActive(subItem) ? "menuActive" : ""}
                                             href={subItem.href}
                                           >
                                             {subItem.label}
@@ -229,19 +248,15 @@ export default function MobileMenu() {
                 )}
               </li>
             ))}
+
             <li className="hr opacity-10 my-1" />
             <li>
-              <Link href={`/sign-up`}>Create an account</Link>
-            </li>
-            <li>
-              <Link href={`/sign-in`}>Log in</Link>
-            </li>
-            <li>
-              <a href="https://themeforest.net/user/ib-themes/portfolio">
-                Buy Template
-              </a>
+              <Link href="/page-contact">
+                {lang === "en" ? "Contact Us" : "Hubungi Kami"}
+              </Link>
             </li>
           </ul>
+
           <ul className="social-icons nav-x mt-4">
             <li>
               {icons.map((icon, index) => (
@@ -251,12 +266,15 @@ export default function MobileMenu() {
               ))}
             </li>
           </ul>
+
           <div
             className="py-2 hstack gap-2 mt-4 bg-white dark:bg-gray-900 uc-sticky uc-active uc-sticky-fixed"
             data-uc-sticky="position: bottom"
           >
             <div className="vstack gap-1">
-              <span className="fs-7 opacity-60">Select theme:</span>
+              <span className="fs-7 opacity-60">
+                {lang === "en" ? "Select theme:" : "Pilih tema:"}
+              </span>
               <div className="darkmode-trigger" data-darkmode-switch="">
                 <label className="switch">
                   <input

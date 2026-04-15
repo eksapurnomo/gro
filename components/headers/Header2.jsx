@@ -4,13 +4,20 @@ import Link from "next/link";
 import Nav from "./component/Nav";
 import Image from "next/image";
 import { openMobileMenu } from "@/utlis/toggleMobileMenu";
-import { openContactModal } from "@/utlis/toggleContactModal";
 import LanguageSelect2 from "../common/LanguageSelect2";
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/context/LanguageContext";
+
+function tr(obj, lang) {
+  return obj?.[lang] || obj?.["id"] || "";
+}
 
 export default function Header2() {
   const prevScrollPos = useRef(0);
   const ticking = useRef(false);
   const [scrollingUp, setScrollingUp] = useState(false);
+  const { lang } = useLanguage();
+  const nav = translations.nav;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +45,7 @@ export default function Header2() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollingUp]); // Depend on `scrollingUp` only
+  }, [scrollingUp]);
 
   return (
     <header
@@ -62,14 +69,14 @@ export default function Header2() {
                 >
                   <Image
                     className="dark:d-none"
-                    alt="Lexend"
+                    alt="CND Logistic"
                     src="/assets/images/common/logo-light.svg"
                     width="117"
                     height="40"
                   />
                   <Image
                     className="d-none dark:d-block"
-                    alt="Lexend"
+                    alt="CND Logistic"
                     src="/assets/images/common/logo-dark.svg"
                     width="117"
                     height="40"
@@ -80,31 +87,21 @@ export default function Header2() {
                 <Nav />
               </ul>
             </div>
-            <div className="uc-navbar-right">
-              <div className="d-none xl:d-block">
-                <a
-                  className="text-none fw-medium"
-                  onClick={openContactModal}
-                  role="button"
-                >
-                  <span>Hubungi Kami</span>
-                </a>
-              </div>
-              <div className="d-none lg:d-block">
-                <Link className="text-none fw-medium" href={`/sign-in`}>
-                
-                </Link>
-              </div>
+            <div className="uc-navbar-right" style={{ gap: "12px", display: "flex", alignItems: "center" }}>
+              {/* Tombol Penawaran */}
               <Link
                 className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex"
-                href={`/page-pricing`}
+                href={`/page-contact`}
               >
-                Penawaran
+                {tr(nav.getQuote, lang)}
               </Link>
+              {/* Language Selector */}
               <LanguageSelect2 />
+              {/* Mobile Hamburger */}
               <a
                 className="d-block lg:d-none uc-icon uc-navbar-toggle-icon"
                 onClick={openMobileMenu}
+                style={{ cursor: "pointer" }}
               >
                 <svg width={20} height={20} viewBox="0 0 20 20">
                   <rect className="line-1" y={3} width={20} height={2} />

@@ -13,9 +13,9 @@ export const menuItems = [
       {
         label: "Pengiriman Barang",
         subItems: [
-          // { href: "/layanan/freight-forwarder", label: "Freight Forwarder" },
+          { href: "/layanan/freight-forwarder", label: "Freight Forwarder" },
           { href: "/layanan/pengiriman-container", label: "Pengiriman Container" },
-          // { href: "/layanan/ekspedisi", label: "Ekspedisi" },
+          { href: "/layanan/ekspedisi", label: "Ekspedisi" },
           { href: "/layanan/trucking-nasional", label: "Trucking Nasional" },
         ],
       },
@@ -30,9 +30,10 @@ export const menuItems = [
     ],
   },
   { id: 4, href: "/bermitra", label: "Bermitra" },
-  { id: 5, href: "/page-about", label: "Kegiatan" },
+  { id: 5, href: "https://blog.cndlogistic.co.id/", label: "Blog", external: true },
   { id: 6, href: "/page-contact", label: "Kontak" },
 ];
+
 
 // Social icons for mobile menu
 export const icons = [
@@ -68,9 +69,9 @@ export const othermenuItems = [
   { href: "/page-career", icon: "unicon-wikis", title: "Karir" },
   { href: "/page-contact", icon: "unicon-wikis", title: "Kontak" },
   { href: "/blog", icon: "unicon-course", title: "Blog" },
-  // { href: "/layanan/freight-forwarder", icon: "unicon-wikis", title: "Freight Forwarder" },
+  { href: "/layanan/freight-forwarder", icon: "unicon-wikis", title: "Freight Forwarder" },
   { href: "/layanan/pengiriman-container", icon: "unicon-wikis", title: "Pengiriman Container" },
-  // { href: "/layanan/ekspedisi", icon: "unicon-wikis", title: "Ekspedisi" },
+  { href: "/layanan/ekspedisi", icon: "unicon-wikis", title: "Ekspedisi" },
   { href: "/layanan/trucking-nasional", icon: "unicon-wikis", title: "Trucking Nasional" },
 ];
 
@@ -97,7 +98,7 @@ export const featurePageLinks = [
     title: "Layanan Utama",
     icon: "unicon-cube",
     items: [
-      // { icon: "icon-01.svg", title: "Freight Forwarder", description: "Layanan pengurusan transportasi barang" },
+      { icon: "icon-01.svg", title: "Freight Forwarder", description: "Layanan pengurusan transportasi barang end-to-end" },
       { icon: "icon-02.svg", title: "Pengiriman Container", description: "Pengiriman FCL & LCL andal" },
     ],
     viewAllText: "Lihat semua layanan",
@@ -106,7 +107,7 @@ export const featurePageLinks = [
     title: "Layanan Ekspedisi",
     icon: "unicon-gamification",
     items: [
-      // { icon: "icon-04.svg", title: "Ekspedisi", description: "Pengiriman reguler & cepat" },
+      { icon: "icon-04.svg", title: "Ekspedisi", description: "Pengiriman reguler & express ke seluruh Indonesia" },
       { icon: "icon-05.svg", title: "Trucking Nasional", description: "Jaringan armada darat terpadu" },
     ],
     viewAllText: "Lihat semua layanan",
